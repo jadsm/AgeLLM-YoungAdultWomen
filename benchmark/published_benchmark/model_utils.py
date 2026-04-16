@@ -62,7 +62,7 @@ def generate_claude_sonnet(content: str,model: str) -> str:
     payload = {
         "anthropic_version": "vertex-2023-10-16",
         "stream": False,  # Set to False for a single response, True for streaming
-        "max_tokens": 512,
+        "max_tokens": 20000,
         "top_p": 0.95,
         "messages": [
             {
@@ -79,10 +79,8 @@ def generate_claude_sonnet(content: str,model: str) -> str:
 
     # Assuming the response is JSON and contains a 'text' field in the last message
     response_data = response.json()
-    if "messages" in response_data and response_data["messages"]:
-        last_message = response_data["messages"][-1]
-        if "content" in last_message and last_message["content"]:
-            return last_message["content"][0].get("text", "")
+    if "content" in response_data and response_data["content"]:
+        return response_data["content"][0].get("text", "")
     return ""
 
 #         cat << EOF > request.json
