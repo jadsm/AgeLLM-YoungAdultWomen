@@ -1,6 +1,6 @@
 
 import os
-from model_utils import generate_claude_sonnet, generate_gemini
+from model_utils import generate_claude_sonnet, generate_gemini, generate_openai
 import json
 
 with open("/Users/jdelgad1/Desktop/Juan/code/.creds/vertex_api.txt", "r") as f:
@@ -11,6 +11,15 @@ def generate(content,model)-> str:
     return generate_gemini(content, model)
   elif model.startswith("claude"):
     return generate_claude_sonnet(content,model)
+  elif model.startswith("qwen"):
+    return generate_openai(content, "qwen/"+model)
+  elif model.startswith("gpt"):
+    return generate_openai(content, "openai/"+model)
+  elif model.startswith("llama"):
+    return generate_openai(content, "meta/"+model,location_id="us-central1")
+  else:
+    raise ValueError(f"Model {model} not supported")
+
 
 if __name__ == "__main__":
   
@@ -19,98 +28,13 @@ if __name__ == "__main__":
     content_strings = [json.loads(line)["input"] for line in f.read().splitlines()]
 
 
-  #  model = "gemini-3.1-pro-preview","gemini-3.1-flash-lite-preview",
-  models = ["claude-sonnet-4-6"]
+  #  model = "gemini-3.1-pro-preview","gemini-3.1-flash-lite-preview","claude-sonnet-4-6",
+  # "qwen3-next-80b-a3b-instruct-maas","gpt-oss-20b-maas"
+  # models = ["llama-3.3-70b-instruct-maas"]
+  models = ["llama-3.2-90b-vision-instruct-maas"]
+  
   for model in models:
     responses = [generate(content, model) for content in content_strings]
     with open(f"outputs/output_{model}.txt", "w") as f:
       for response in responses:
         f.write(response + "\n")
-
-
-#         cat << EOF > request.json
-# {
-#     "anthropic_version": "vertex-2023-10-16"
-#     ,"stream": true
-#     ,"max_tokens": 512
-#     ,"top_p": 0.95
-#     ,"messages": [
-#         {
-#             "role": "user",
-#             "content": [
-#             ]
-#         }
-#     ]
-# }
-# EOF
-
-# ENDPOINT="asia-southeast1-aiplatform.googleapis.com"
-# LOCATION_ID="asia-southeast1"
-# PROJECT_ID="imperial-410612"
-# MODEL_ID="claude-sonnet-4-6"
-# METHOD="streamRawPredict"
-
-# curl -X POST \
-#   -H "Authorization: Bearer $(gcloud auth print-access-token)" \
-#   -H "Content-Type: application/json; charset=utf-8" \
-#   -d @request.json \
-# "https://${ENDPOINT}/v1/projects/${PROJECT_ID}/locations/${LOCATION_ID}/publishers/anthropic/models/${MODEL_ID}:${METHOD}"
-
-
-
-# cat << EOF > request.json
-# {
-#     "model": "qwen/qwen3-next-80b-a3b-instruct-maas"
-#     ,"stream": true
-#     ,"max_tokens": 8192
-#     ,"temperature": 0
-#     ,"top_p": 0.95
-#     ,"messages": [
-#         {
-#             "role": "user",
-#             "content": [
-#             ]
-#         }
-#     ]
-# }
-# EOF
-
-# ENDPOINT="aiplatform.googleapis.com"
-# REGION="global"
-# PROJECT_ID="imperial-410612"
-
-# curl \
-# -X POST \
-# -H "Content-Type: application/json" \
-# -H "Authorization: Bearer $(gcloud auth print-access-token)" \
-# "https://${ENDPOINT}/v1beta1/projects/${PROJECT_ID}/locations/${REGION}/endpoints/openapi/chat/completions" -d '@request.json'
-
-
-
-
-# cat << EOF > request.json
-# {
-#     "model": "openai/gpt-oss-20b-maas"
-#     ,"stream": true
-#     ,"max_tokens": 4096
-#     ,"temperature": 0
-#     ,"top_p": 0.95
-#     ,"messages": [
-#         {
-#             "role": "user",
-#             "content": [
-#             ]
-#         }
-#     ]
-# }
-# EOF
-
-# ENDPOINT="aiplatform.googleapis.com"
-# REGION="global"
-# PROJECT_ID="imperial-410612"
-
-# curl \
-# -X POST \
-# -H "Content-Type: application/json" \
-# -H "Authorization: Bearer $(gcloud auth print-access-token)" \
-# "https://${ENDPOINT}/v1beta1/projects/${PROJECT_ID}/locations/${REGION}/endpoints/openapi/chat/completions" -d '@request.json'
