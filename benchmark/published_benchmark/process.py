@@ -59,6 +59,8 @@ df['chronological_age'] = df['patient'].map(real_age_mapping)
 
 df_reasoning = df.loc[:,['patient', 'model','inference_process', 'key_indicators']]
 df.drop(columns=['inference_process', 'key_indicators'], inplace=True)
+df_reasoning.to_csv("outputs/reasoning_and_indicators.csv", index=False)
+
 
 dftall = df.melt(id_vars=['patient', 'model'], var_name='age_type', value_name='age_value')
 
@@ -112,7 +114,7 @@ for age in df_wide.columns.levels[0].unique():
         fmt=".2f", 
         cmap='coolwarm', 
         vmin=0, vmax=1,
-        cbar_kws={"shrink": .8}
+        cbar=False
     )
     # Fix labels: Rotate and align
     plt.xticks(rotation=45, ha='right')
