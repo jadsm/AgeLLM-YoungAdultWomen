@@ -22,19 +22,20 @@ def generate(content,model)-> str:
 
 
 if __name__ == "__main__":
-  
-  # load contents from file
-  with open("data/source_data/health_info_example.jsonl", "r") as f:
-    content_strings = [json.loads(line)["input"] for line in f.read().splitlines()]
+  paths = {#"women_pre_natal":"data/source_data/women_before_pregnancy.jsonl",
+           "women_post_natal":"data/source_data/women_after_pregnancy.jsonl"}
+  for name, path in paths.items():
+    # load contents from file
+    with open(path, "r") as f:
+      content_strings = [json.loads(line)["input"] for line in f.read().splitlines()]
 
 
-  #  model = "gemini-3.1-pro-preview","gemini-3.1-flash-lite-preview","claude-sonnet-4-6",
-  # "qwen3-next-80b-a3b-instruct-maas","gpt-oss-20b-maas"
-  # models = ["llama-3.3-70b-instruct-maas"]
-  models = ["llama-3.2-90b-vision-instruct-maas"]
-  
-  for model in models:
-    responses = [generate(content, model) for content in content_strings]
-    with open(f"outputs/output_{model}.txt", "w") as f:
-      for response in responses:
-        f.write(response + "\n")
+    #  model = "gemini-3.1-pro-preview","gemini-3.1-flash-lite-preview","claude-sonnet-4-6","qwen3-next-80b-a3b-instruct-maas","gpt-oss-20b-maas"
+    # models = ["llama-3.3-70b-instruct-maas"]
+    models = ["gemini-3.1-pro-preview","gemini-3.1-flash-lite-preview","claude-sonnet-4-6"]
+    
+    for model in models:
+      responses = [generate(content, model) for content in content_strings]
+      with open(f"outputs/output_{name}_{model}.txt", "w") as f:
+        for response in responses:
+          f.write(response + "\n")

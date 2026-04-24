@@ -32,37 +32,47 @@ df = pd.concat(a, ignore_index=True)
 # model pseudonyms
 model_mapping = {
     "gemini-3.1-pro": "Gemini Pro",
+    "gemini-3.1-pro-preview": "Gemini Pro",
     "gemini-3.1-flash-lite-preview": "Gemini Flash",
     "claude-sonnet-4-6": "Claude Sonnet",
     "qwen3-next-80b-a3b-instruct-maas": "Qwen 3",
     "gpt-oss-20b-maas": "GPT 20b"
 }
 
+df['cohort'] = None 
+def assign_cohort(name):
+    idx = df['model'].str.contains(name)
+    df.loc[idx, 'cohort'] = name
+    df.loc[idx,'model'] = df.loc[idx,'model'].str.replace(name, "").str.strip("_")
+    return df
+df = assign_cohort('women_pre_natal')
+df = assign_cohort('women_post_natal')
+df['cohort'] = df['cohort'].fillna("nature_paper")
 df['model'] = df['model'].map(model_mapping)
 
 
 # calculate real age from text
 def get_real_age(x):
 
-    match = re.search(r"This (\d+)-year-old", x)
+    match = re.search(r"(\d+(?:\.\d+)?)-year-old", x)
     
     if match:
         age = match.group(1)
-        age_int = int(age)
-        return age_int
+        # age_int = int(age)
+        return age
     else:
         print("No age found in the text.")
         return None
     
-real_age_mapping = {ii+1:i for ii,i in enumerate(df.query("model == 'Claude Sonnet'")['inference_process'].apply(get_real_age).values)}
-df['chronological_age'] = df['patient'].map(real_age_mapping)
+real_age_mapping = { (row['patient'], row['cohort']): get_real_age(row['inference_process']) 
+                    for _, row in df.query("model == 'Claude Sonnet'").iterrows() }
+df['chronological_age'] = df.set_index(['patient', 'cohort']).index.map(real_age_mapping).astype(float)
 
 df_reasoning = df.loc[:,['patient', 'model','inference_process', 'key_indicators']]
 df.drop(columns=['inference_process', 'key_indicators'], inplace=True)
 df_reasoning.to_csv("outputs/reasoning_and_indicators.csv", index=False)
 
-
-dftall = df.melt(id_vars=['patient', 'model'], var_name='age_type', value_name='age_value')
+dftall = df.melt(id_vars=['patient','cohort', 'model'], var_name='age_type', value_name='age_value')
 
 dftall.groupby(["patient","age_type"])['age_value'].std()
 
@@ -70,20 +80,21 @@ dftall.groupby(["patient","age_type"])['age_value'].std()
 # concordance index
 
 # This creates a table where each column is a different model's prediction
-df_wide = dftall.pivot(index='patient', columns=['age_type','model'], values='age_value')
+df_wide = dftall.pivot(index=['patient','cohort'], columns=['age_type','model'], values='age_value')
 
 ### METRIC 1: Intraclass Correlation Coefficient (ICC)
 # This tells you how much the 5 models agree with each other (0 to 1 scale)
-for f in dftall['age_type'].unique():
-    dfaux = dftall.query(f"age_type == '{f}'")
-    icc = pg.intraclass_corr(data=dfaux, targets='patient', raters='model', ratings='age_value')
-    print(f"ICC Results for {f}:")
-    print(icc) # ICC3k measures consistency of fixed 'raters'
+# for f in dftall['age_type'].unique():
+#     dfaux = dftall.query(f"age_type == '{f}'")
+#     icc = pg.intraclass_corr(data=dfaux, targets='patient', raters='model', ratings='age_value')
+#     print(f"ICC Results for {f}:")
+#     print(icc) # ICC3k measures consistency of fixed 'raters'
 
 
 ### METRIC 2: Age Acceleration (Δ-Age)
 # We calculate the 'gap' for each model. 
 # A good model should have a Δ-Age distribution that isn't wildly skewed.
+
 dfnew_out = pd.DataFrame()
 dfnew = pd.DataFrame()
 for age in df_wide.columns.levels[0].unique():
@@ -93,10 +104,13 @@ for age in df_wide.columns.levels[0].unique():
             dfnew['delta'] = df_wide[(age, model)] - df_wide[('chronological_age',model)]
             dfnew['age'] = age            
             dfnew['model'] = model
-            dfnew_out = pd.concat([dfnew_out, dfnew], ignore_index=True)
+            dfnew_out = pd.concat([dfnew_out, dfnew.reset_index()], ignore_index=True)
 print("\nMean Age Acceleration per Model:")
-print(dfnew_out.groupby(['model','age'])['delta'].describe())
-dfnew_out.groupby(['model','age'])['delta'].describe().to_csv('outputs/age_acceleration_summary.csv')
+# print(dfnew_out.groupby(['model','age'])['delta'].describe())
+print(dfnew_out.groupby(['model','age'])['delta'].describe()['mean'].reset_index().pivot(columns='model',index='age'))
+dfnew_out.groupby(['cohort','model','age'])['delta'].describe().to_csv('outputs/age_acceleration_summary.csv')
+dfnew_out.pivot_table(columns=['cohort','model'],index='age').to_csv('outputs/age_acceleration_summary_cohort.csv')
+dfnew_out.pivot_table(columns=['cohort','model'],index='age',aggfunc='median').to_csv('outputs/age_acceleration_summary_median_cohort.csv')
 
 ### METRIC 3: Inter-Model Correlation Heatmap
 # This visualizes which models are "twins" and which is the outlier.
