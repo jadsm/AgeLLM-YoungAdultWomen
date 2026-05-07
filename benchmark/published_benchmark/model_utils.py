@@ -6,7 +6,7 @@ from utils import parse_content, config
 import os
 import subprocess
 
-def generate_gemini(content: str,model: str) -> str:
+def generate_gemini(content: str,model: str,seed: int = None) -> str:
     client = genai.Client(vertexai=True,api_key=os.environ.get("GOOGLE_CLOUD_API_KEY"))
     
     # load system instruction from file
@@ -20,7 +20,7 @@ def generate_gemini(content: str,model: str) -> str:
     for chunk in client.models.generate_content_stream(
       model = model,
       contents = contents,
-      config = config(si_text1),
+      config = config(si_text1, seed=seed),
       ):
       if not chunk.candidates or not chunk.candidates[0].content or not chunk.candidates[0].content.parts:
           continue
@@ -85,7 +85,7 @@ def generate_claude_sonnet(content: str,model: str) -> str:
     return ""
 
 
-def generate_openai(content: str,model: str,location_id:str = "global") -> str:
+def generate_openai(content: str,model: str,location_id:str = "global", seed: int = None) -> str:
     """
     Generates a response from the models using the Vertex AI API.
 
@@ -121,6 +121,7 @@ def generate_openai(content: str,model: str,location_id:str = "global") -> str:
         "stream": False,  # Set to False for a single response, True for streaming
         "max_tokens": 20000,
         "temperature": 0,
+        "seed": seed,
         "top_p": 0.95,
         "messages": [
             {

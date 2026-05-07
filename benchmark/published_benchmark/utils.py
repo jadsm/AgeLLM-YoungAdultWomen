@@ -11,9 +11,10 @@ def parse_content(txt_list: list[str]) -> list[types.Content]:
     ]
     return contents
 
-def config(si_text1) -> types.GenerateContentConfig:
+def config(si_text1, seed=None) -> types.GenerateContentConfig:
     return types.GenerateContentConfig(
     temperature = 0,
+    seed = seed,
     top_p = 0.95,
     max_output_tokens = 20000,
     safety_settings = [types.SafetySetting(

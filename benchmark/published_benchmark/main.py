@@ -6,36 +6,38 @@ import json
 with open("/Users/jdelgad1/Desktop/Juan/code/.creds/vertex_api.txt", "r") as f:
   os.environ["GOOGLE_CLOUD_API_KEY"] = f.read().strip()
 
-def generate(content,model)-> str:
+def generate(content,model, seed=None)-> str:
   if model.startswith("gemini"):
-    return generate_gemini(content, model)
+    return generate_gemini(content, model, seed=seed)
   elif model.startswith("claude"):
     return generate_claude_sonnet(content,model)
   elif model.startswith("qwen"):
-    return generate_openai(content, "qwen/"+model)
+    return generate_openai(content, "qwen/"+model, seed=seed)
   elif model.startswith("gpt"):
-    return generate_openai(content, "openai/"+model)
+    return generate_openai(content, "openai/"+model, seed=seed)
   elif model.startswith("llama"):
-    return generate_openai(content, "meta/"+model,location_id="us-central1")
+    return generate_openai(content, "meta/"+model,location_id="us-central1", seed=seed)
   else:
     raise ValueError(f"Model {model} not supported")
 
 
 if __name__ == "__main__":
-  paths = {#"women_pre_natal":"data/source_data/women_before_pregnancy.jsonl",
+  paths = {"women_pre_natal":"data/source_data/women_before_pregnancy.jsonl",
            "women_post_natal":"data/source_data/women_after_pregnancy.jsonl"}
-  for name, path in paths.items():
-    # load contents from file
-    with open(path, "r") as f:
-      content_strings = [json.loads(line)["input"] for line in f.read().splitlines()]
+  repeats = 5
+  for k in range(repeats):
+    for name, path in paths.items():
+      # load contents from file
+      with open(path, "r") as f:
+        content_strings = [json.loads(line)["input"] for line in f.read().splitlines()]
 
-
-    #  model = "gemini-3.1-pro-preview","gemini-3.1-flash-lite-preview","claude-sonnet-4-6","qwen3-next-80b-a3b-instruct-maas","gpt-oss-20b-maas"
-    # models = ["llama-3.3-70b-instruct-maas"]
-    models = ["gemini-3.1-pro-preview","gemini-3.1-flash-lite-preview","claude-sonnet-4-6"]
-    
-    for model in models:
-      responses = [generate(content, model) for content in content_strings]
-      with open(f"outputs/output_{name}_{model}.txt", "w") as f:
-        for response in responses:
-          f.write(response + "\n")
+      #  model = "gemini-3.1-pro-preview","gemini-3.1-flash-lite-preview","claude-sonnet-4-6","qwen3-next-80b-a3b-instruct-maas","gpt-oss-20b-maas"
+      # models = ["llama-3.3-70b-instruct-maas"]
+      models = ["claude-sonnet-4-6"]
+      
+      for model in models:
+        responses = [generate(content, model, seed=58) for content in content_strings]
+        with open(f"outputs/output_{name}_{model}_{k}_seed{58}.txt", "w") as f:
+          for response in responses:
+            f.write(response + "\n")
+            print(f'Finished generating! {name}_{model}_{k}_seed{58}')
