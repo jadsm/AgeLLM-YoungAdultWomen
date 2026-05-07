@@ -24,9 +24,9 @@ def retreive_data(model_path):
     
 # read the data
 a = []
-filter_conditions = "seed58"
+filter_conditions = "seed[0-4]"
 for model_path in os.listdir("outputs"):
-    if not model_path.endswith(".txt") or filter_conditions not in model_path:
+    if not model_path.endswith(".txt") or not re.search(rf"{filter_conditions}", model_path):
         continue
     a.append(retreive_data(model_path))   
 
@@ -82,9 +82,6 @@ df_reasoning = df.loc[:,['patient', 'model','inference_process', 'key_indicators
 df.drop(columns=['inference_process', 'key_indicators'], inplace=True)
 df_reasoning.to_csv("outputs/reasoning_and_indicators.csv", index=False)
 
-dftall = df.melt(id_vars=['patient','cohort', 'model'], var_name='age_type', value_name='age_value')
-dftall.groupby(["patient","age_type"])['age_value'].std()
-
 # discrepancies in repeats
 agecols = [col for col in df.columns if 'age' in col]
 aux = df.groupby(['cohort','model','patient'])[agecols].std().reset_index()
@@ -92,6 +89,9 @@ aux.to_csv(f"outputs/discrepancies_repeats{filter_conditions}.csv")
 aux.groupby(['model'])[agecols].agg(['mean','median','min','max']).T.to_csv(f"outputs/discrepancies_repeats{filter_conditions}_agg.csv")
 aux.groupby(['model'])[agecols].median().T.to_csv(f"outputs/discrepancies_repeats{filter_conditions}_median.csv")
 
+# transpose the data for further analysis
+dftall = df.melt(id_vars=['patient','cohort', 'model'], var_name='age_type', value_name='age_value')
+dftall.groupby(["patient","age_type"])['age_value'].std()
 
 # concordance index
 # This creates a table where each column is a different model's prediction

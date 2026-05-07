@@ -1,0 +1,77 @@
+{
+    "inference process": "The individual is 34.14 years old. Despite excellent physical activity and no smoking or alcohol consumption, severe obesity (BMI 41.3), prediabetes (HbA1c 6.1%), and high inflammation (hs-CRP 10.7) significantly accelerate overall, metabolic, and cardiovascular aging. Hepatic and renal functions are normal, keeping their respective ages close to chronological age. Pulmonary age benefits from no smoking and high activity. Musculoskeletal age is slightly elevated due to the mechanical load from severe obesity, though partially mitigated by high physical activity.",
+    "key indicators": "overall biological age: severe obesity, prediabetes, high inflammation, high physical activity#cardiovascular age: elevated BP, high hs-CRP, severe obesity#hepatic age: normal liver enzymes, no alcohol#pulmonary age: never smoker, high physical activity#renal age: normal creatinine#metabolic system age: BMI 41.3, HbA1c 6.1%, central adiposity#musculoskeletal age: severe obesity, high physical activity",
+    "overall biological age": 40,
+    "cardiovascular age": 42,
+    "hepatic age": 35,
+    "pulmonary age": 33,
+    "renal age": 34,
+    "metabolic system age": 43,
+    "musculoskeletal age": 38
+}
+{
+    "inference process": "The individual is 33.71 years old with a generally healthy profile, including normal BMI, blood pressure, and glycemic status, as well as low inflammation. However, the presence of alcohol consumption and working night shifts on all working days may introduce some oxidative stress and circadian disruption. The cardiovascular system benefits from normal blood pressure and low hs-CRP, though LDL is slightly elevated (intermediate risk). The hepatic system is functioning normally based on enzymes, but alcohol intake keeps its age close to chronological. The pulmonary system benefits significantly from never smoking. Renal function is optimal. Metabolic age is slightly younger due to normal glucose and BMI, despite intermediate diet quality. Musculoskeletal age is estimated near chronological age due to unknown physical activity levels.",
+    "key indicators": "overall biological age: normal BMI, normal BP, never smoked, night shifts, alcohol use#cardiovascular age: normal BP, low hs-CRP, intermediate LDL#hepatic age: normal ALT/AST/GGT, alcohol use#pulmonary age: never smoked#renal age: normal creatinine#metabolic system age: normal HbA1c, normal BMI, intermediate lipid risk#musculoskeletal age: normal BMI, unknown physical activity",
+    "overall biological age": 32,
+    "cardiovascular age": 32,
+    "hepatic age": 33,
+    "pulmonary age": 31,
+    "renal age": 32,
+    "metabolic system age": 32,
+    "musculoskeletal age": 33
+}
+{
+    "inference process": "The individual is 34.53 years old. Overall biological age is slightly elevated due to central adiposity and metabolic issues, despite a good lifestyle. Cardiovascular age is near chronological due to normal BP but unfavorable lipids. Hepatic age is elevated due to high ALT and central adiposity. Pulmonary age is lower due to no smoking and high physical activity. Renal age is lower due to normal creatinine. Metabolic age is significantly elevated due to prediabetes, central adiposity, and unfavorable lipids. Musculoskeletal age is lower due to high walking duration and normal BMI.",
+    "key indicators": "overall biological age: central adiposity, prediabetes, elevated ALT, good lifestyle#cardiovascular age: normal BP, unfavorable lipids, no smoking#hepatic age: elevated ALT, central adiposity#pulmonary age: never smoked, high walking#renal age: normal creatinine#metabolic system age: prediabetes, unfavorable lipids, central adiposity#musculoskeletal age: high walking, normal BMI",
+    "overall biological age": 36,
+    "cardiovascular age": 35,
+    "hepatic age": 38,
+    "pulmonary age": 32,
+    "renal age": 33,
+    "metabolic system age": 39,
+    "musculoskeletal age": 33
+}
+{
+    "inference process": "The individual is chronologically 29.85 years old. The overall biological age is estimated to be slightly higher due to obesity, elevated inflammation, and impaired glucose tolerance (IGT), though mitigated by high physical activity and a non-smoking lifestyle. Cardiovascular age is elevated due to unfavorable lipids, obesity, and high hs-CRP. Hepatic age is close to chronological age as liver enzymes are normal, despite obesity. Pulmonary age is younger due to being a never-smoker and highly physically active. Renal age is normal based on healthy creatinine levels. Metabolic system age is significantly older due to obesity, central adiposity, IGT, and unfavorable lipid profile. Musculoskeletal age is relatively normal, balancing high physical activity with the mechanical load of obesity.",
+    "key indicators": "overall biological age: obesity, elevated inflammation, IGT, high physical activity, never smoker#cardiovascular age: unfavorable lipid profile, elevated hs-CRP, obesity, normal BP#hepatic age: normal ALT, AST, GGT#pulmonary age: never smoker, high physical activity#renal age: normal creatinine#metabolic system age: BMI, central adiposity, IGT, unfavorable lipids#musculoskeletal age: high physical activity, obesity",
+    "overall biological age": 32,
+    "cardiovascular age": 33,
+    "hepatic age": 30,
+    "pulmonary age": 28,
+    "renal age": 29,
+    "metabolic system age": 35,
+    "musculoskeletal age": 30
+}
+{
+    "inference process": "The individual is chronologically 26.28 years old. The overall biological age is estimated to be slightly higher due to central adiposity, unfavorable diet, elevated LDL cholesterol, and high inflammation (hs-CRP), though mitigated by high physical activity and normal blood pressure. Cardiovascular age is elevated due to high LDL, central adiposity, and significant inflammation. Hepatic and renal ages are close to chronological age due to normal liver enzymes and creatinine levels. Pulmonary age is slightly lower due to being a never-smoker and highly physically active. Metabolic age is elevated due to overweight status and unfavorable lipid profile, despite normal glycemic status. Musculoskeletal age is maintained near chronological age due to high physical activity balancing the excess weight.",
+    "key indicators": "overall biological age: BMI, central adiposity, hs-CRP, physical activity, diet#cardiovascular age: LDL cholesterol, hs-CRP, central adiposity, blood pressure#hepatic age: ALT, AST, GGT#pulmonary age: smoking status, physical activity#renal age: creatinine#metabolic system age: BMI, waist circumference, LDL cholesterol, HbA1c#musculoskeletal age: physical activity, BMI",
+    "overall biological age": 28,
+    "cardiovascular age": 29,
+    "hepatic age": 26,
+    "pulmonary age": 25,
+    "renal age": 26,
+    "metabolic system age": 29,
+    "musculoskeletal age": 26
+}
+{
+    "inference process": "The individual is 30.35 years old. The overall biological age is estimated to be higher than the chronological age due to being overweight with central adiposity, elevated blood pressure, low physical activity, and poor dietary habits (very low fruit and vegetable intake). Cardiovascular age is elevated due to the high blood pressure, central adiposity, and low physical activity. Hepatic and renal ages are kept close to the chronological age because liver enzymes and creatinine levels are normal. Metabolic age is slightly elevated due to central adiposity, despite normal glycemic and lipid profiles. Musculoskeletal age is elevated due to low physical activity and excess weight.",
+    "key indicators": "overall biological age: BMI, central adiposity, elevated BP, low physical activity, poor diet#cardiovascular age: elevated BP, central adiposity, low physical activity#hepatic age: normal ALT, AST, GGT#pulmonary age: never smoked, overweight#renal age: normal creatinine#metabolic system age: central adiposity, normal HbA1c, normal lipids#musculoskeletal age: low physical activity, overweight",
+    "overall biological age": 33,
+    "cardiovascular age": 34,
+    "hepatic age": 30,
+    "pulmonary age": 31,
+    "renal age": 30,
+    "metabolic system age": 32,
+    "musculoskeletal age": 33
+}
+{
+    "inference process": "The individual is 29 years old. The overall biological age is estimated to be slightly higher due to overweight, central adiposity, elevated inflammation (hs-CRP 4.5), and an unfavorable diet, despite being a non-smoker and physically active. Cardiovascular age is elevated due to unfavorable lipids and inflammation. Hepatic and renal ages are kept close to chronological age due to normal liver enzymes and creatinine. Pulmonary age is normal as the individual is a never-smoker. Metabolic age is elevated due to central adiposity and unfavorable lipids, though glycemic status is normal. Musculoskeletal age is slightly elevated due to excess weight.",
+    "key indicators": "overall biological age: overweight, central adiposity, elevated inflammation, unfavorable diet#cardiovascular age: unfavorable lipids, elevated hs-CRP, normal BP#hepatic age: normal ALT, AST, GGT#pulmonary age: never smoker#renal age: normal creatinine#metabolic system age: central adiposity, unfavorable lipids, normal HbA1c#musculoskeletal age: overweight, moderate physical activity",
+    "overall biological age": 31,
+    "cardiovascular age": 32,
+    "hepatic age": 29,
+    "pulmonary age": 29,
+    "renal age": 29,
+    "metabolic system age": 32,
+    "musculoskeletal age": 30
+}

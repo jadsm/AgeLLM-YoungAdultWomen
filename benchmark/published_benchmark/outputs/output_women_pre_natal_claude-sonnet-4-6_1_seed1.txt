@@ -1,0 +1,91 @@
+```json
+{
+    "inference process": "This 34-year-old Malay female presents with severe obesity (BMI 41.3, waist 116.4 cm), central adiposity, elevated blood pressure, prediabetes (HbA1c 6.1%), and markedly elevated hs-CRP (10.7 mg/L), all of which are significant aging accelerators. Protective factors include never smoking, no alcohol, high physical activity, normal lipid profile, normal liver enzymes, and normal renal function. Overall biological age is pushed well above chronological age primarily due to obesity, inflammation, and prediabetes, partially offset by excellent lifestyle habits. Cardiovascular age is elevated due to obesity, elevated BP, central adiposity, elevated inflammation, and prediabetic state, though lipids are reasonable. Hepatic age is modestly elevated due to severe obesity and central adiposity (risk of NAFLD) despite normal liver enzymes. Pulmonary age is moderately elevated due to severe obesity which mechanically restricts lung function, though no smoking history is protective. Renal age is near chronological age given normal creatinine and no diabetes yet, though obesity and elevated CRP pose mild risk. Metabolic system age is significantly elevated due to prediabetes, severe obesity, central adiposity, and elevated inflammation. Musculoskeletal age is modestly elevated due to severe obesity placing excess load on joints, though high physical activity is partially protective.",
+    "key indicators": "overall biological age: BMI 41.3 (obese), central adiposity, HbA1c 6.1% (prediabetes), hs-CRP 10.7 (elevated inflammation), elevated BP, high physical activity, never smoker#cardiovascular age: obesity, central adiposity, elevated BP, hs-CRP 10.7, prediabetes, intermediate lipid risk#hepatic age: severe obesity, central adiposity, normal liver enzymes (ALT/AST/GGT)#pulmonary age: severe obesity (BMI 41.3, restrictive effect), never smoker, high physical activity#renal age: normal creatinine, normal renal status, obesity/inflammation mild risk#metabolic system age: HbA1c 6.1% (prediabetes), BMI 41.3, central adiposity, hs-CRP 10.7, OGTT normal#musculoskeletal age: BMI 41.3 (joint load), high physical activity (protective)",
+    "overall biological age": 44,
+    "cardiovascular age": 46,
+    "hepatic age": 40,
+    "pulmonary age": 41,
+    "renal age": 36,
+    "metabolic system age": 48,
+    "musculoskeletal age": 39
+}
+```
+```json
+{
+    "inference process": "This is a 33.71-year-old Chinese female (inferred from height/weight profile) with generally good health markers. Lifestyle concerns include nightly shift work (strongly linked to accelerated aging, cardiovascular, metabolic, and inflammation risk), alcohol consumption, very low fruit and vegetable intake (12.4g and 14.5g/day respectively, far below recommended levels), moderate red/processed meat intake, and unknown physical activity. Protective factors include never smoking, normal BMI (23.4), normal blood pressure (113.5/71.5), normal HbA1c (5%), low hs-CRP (0.2), normal renal and liver enzymes, high HDL (1.97), and normal glucose metabolism. Overall biological age: Night shift work, poor diet quality (very low fruit/vegetable intake), alcohol use, and unknown physical activity suggest mild acceleration beyond chronological age, estimated ~36. Cardiovascular age: Good BP, low CRP, good HDL, normal heart rate, never smoker; slightly elevated LDL (3.28) and night shift work are mild negatives; estimated ~34. Hepatic age: GGT at 39 U/L is at the upper end of normal range, alcohol use is a concern; ALT and AST normal; estimated ~36. Pulmonary age: Never smoker, no known pulmonary disease, no spirometry data; estimated close to chronological age ~33. Renal age: Creatinine 56 umol/L, normal renal status, young age; estimated ~32. Metabolic system age: HbA1c 5%, normal OGTT, normal BMI, high HDL, low triglycerides, but night shift work and poor diet are metabolic risk factors; estimated ~34. Musculoskeletal age: No grip strength or spirometry data, normal BMI, young age, but unknown physical activity and night shift lifestyle may slightly increase; estimated ~34.",
+    "key indicators": "overall biological age: night shift work, low fruit/vegetable intake, alcohol, unknown physical activity, intermediate diet quality#cardiovascular age: LDL 3.28, night shift work, high HDL 1.97, normal BP, never smoker, low hs-CRP#hepatic age: GGT 39 (upper normal), alcohol use, normal ALT/AST#pulmonary age: never smoker, no pulmonary history, no spirometry data#renal age: creatinine 56 umol/L, normal renal status, young age#metabolic system age: night shift work, poor diet, HbA1c 5%, normal OGTT, normal BMI, high HDL, low triglycerides#musculoskeletal age: unknown physical activity, normal BMI, young age, no grip strength data",
+    "overall biological age": 36,
+    "cardiovascular age": 34,
+    "hepatic age": 36,
+    "pulmonary age": 33,
+    "renal age": 32,
+    "metabolic system age": 34,
+    "musculoskeletal age": 34
+}
+```
+```json
+{
+    "inference process": "This 34.53-year-old Chinese female (inferred from low creatinine and BP) has a generally healthy lifestyle: never smoker, no alcohol, high walking activity, no sugar-sweetened beverages, low red meat. BMI is normal but waist circumference 83.35cm indicates central adiposity, a metabolic risk factor. Key concerns: HbA1c 6.1% (prediabetes), unfavorable lipid profile, elevated ALT (56 U/L, above normal upper limit ~40 U/L) suggesting hepatic stress, moderate hs-CRP indicating mild systemic inflammation. Blood pressure is low-normal, creatinine normal. OGTT is normal despite prediabetic HbA1c, suggesting early glucose dysregulation. Overall biological age is modestly elevated above chronological age due to prediabetes, central adiposity, and metabolic risks, partially offset by excellent lifestyle habits. Cardiovascular age: prediabetes, unfavorable lipids, central adiposity, moderate CRP push age up, but normal BP and good lifestyle moderate this — estimated ~38. Hepatic age: elevated ALT with central adiposity suggests early NAFLD/hepatic stress — estimated ~42. Pulmonary age: no smoking, high physical activity, no respiratory issues — estimated ~30 (younger). Renal age: creatinine normal, no hypertension — estimated ~32. Metabolic age: prediabetes, central adiposity, unfavorable lipids, moderate CRP — most aged system, estimated ~44. Musculoskeletal age: high walking activity, normal BMI, no issues noted — estimated ~30.",
+    "key indicators": "overall biological age: HbA1c (prediabetes), central adiposity, unfavorable lipids, elevated ALT, moderate hs-CRP, normal BP, never smoker, high walking activity#cardiovascular age: unfavorable lipid profile, prediabetes, central adiposity, moderate hs-CRP, normal BP, no smoking/alcohol#hepatic age: elevated ALT (56 U/L), central adiposity, intermediate diet quality, moderate hs-CRP#pulmonary age: never smoker, high walking activity, no respiratory disease history#renal age: normal creatinine, normal blood pressure, no renal disease#metabolic system age: HbA1c 6.1% (prediabetes), central adiposity, unfavorable lipids, moderate hs-CRP, normal OGTT#musculoskeletal age: high walking duration (1365 min/week), normal BMI, no musculoskeletal complaints",
+    "overall biological age": 38,
+    "cardiovascular age": 38,
+    "hepatic age": 42,
+    "pulmonary age": 30,
+    "renal age": 32,
+    "metabolic system age": 44,
+    "musculoskeletal age": 30
+}
+```
+```json
+{
+    "inference process": "This is a 29.85-year-old Indian female (inferred from height/weight) with several concerning findings despite young chronological age. Key aging drivers: obesity (BMI 30.65, central adiposity), elevated hs-CRP (5.9 mg/L indicating systemic inflammation), unfavorable lipid profile (low HDL 1.06, elevated LDL 3.29, TG 1.31), and IGT on OGTT suggesting early metabolic dysfunction. Protective factors include never smoking, no alcohol, high physical activity (MET 9317), normal blood pressure, and normal HbA1c. Overall biological age is pushed above chronological age primarily due to obesity, inflammation, lipid risk, and IGT, but partially offset by excellent lifestyle habits. Cardiovascular age is elevated due to central adiposity, unfavorable lipid profile, and elevated inflammation, though protected by normal BP and no smoking/alcohol. Hepatic age is near normal given normal liver enzymes (ALT 24, AST 27, GGT 15), though obesity and central adiposity raise mild concern. Pulmonary age is likely near chronological age with no smoking history and high physical activity. Renal age is normal given creatinine 64 umol/L and normal renal status. Metabolic age is notably elevated due to IGT, obesity, central adiposity, and unfavorable lipid profile despite normal HbA1c. Musculoskeletal age is likely below chronological age given very high physical activity levels.",
+    "key indicators": "overall biological age: BMI 30.65 (obese), central adiposity, hs-CRP 5.9 (elevated inflammation), unfavorable lipid profile, IGT, high physical activity (protective), never smoker (protective), normal BP (protective)#cardiovascular age: unfavorable lipid profile (LDL 3.29, HDL 1.06, TG 1.31), central adiposity, elevated hs-CRP, normal BP (protective), no smoking/alcohol (protective)#hepatic age: normal ALT/AST/GGT, obesity and central adiposity (mild concern), no alcohol#pulmonary age: never smoker, high physical activity, no respiratory disease history#renal age: creatinine 64 umol/L, normal renal status, normal BP#metabolic system age: IGT, obesity, central adiposity (WC 96.55 cm), unfavorable lipid profile, HbA1c 5.3% (borderline normal)#musculoskeletal age: very high physical activity (MET 9317 min/week, walking 690 min/week), young age",
+    "overall biological age": 36,
+    "cardiovascular age": 38,
+    "hepatic age": 32,
+    "pulmonary age": 28,
+    "renal age": 28,
+    "metabolic system age": 40,
+    "musculoskeletal age": 26
+}
+```
+```json
+{
+    "inference process": "This 26.28-year-old Indian female (inferred from low creatinine) has several concerning indicators despite young age. Overall: BMI 28.97 (overweight), central adiposity (waist 102.8 cm), very poor diet (near-zero fruit/vegetable intake, high sugar-sweetened beverages), alcohol use, elevated hs-CRP (19.2 mg/L - markedly elevated indicating significant systemic inflammation), unfavorable lipid profile (LDL 3.68, low HDL 1.08). Protective: never smoked, very physically active (high MET), normal BP, normal glycemic status, normal liver enzymes, normal renal function. The markedly elevated hs-CRP is a major aging driver pushing biological age up considerably. Overall biological age estimated ~34-35, roughly 8 years older than chronological age. Cardiovascular: unfavorable lipids (LDL 3.68, low HDL), central adiposity, elevated CRP, alcohol use, but normal BP and no smoking - estimated ~33. Hepatic: liver enzymes normal (ALT 23, AST 18, GGT 21), alcohol use is a mild concern, poor diet - estimated ~28. Pulmonary: no smoking, physically active, no respiratory history - estimated ~25 (younger). Renal: creatinine 58 umol/L normal, normal BP - estimated ~24 (younger). Metabolic: overweight with central adiposity, unfavorable lipids, elevated CRP, poor diet, sugar-sweetened beverages, but normal HbA1c and normal OGTT - estimated ~35. Musculoskeletal: physically active (high MET, high walking), but overweight putting stress on joints, young age - estimated ~27.",
+    "key indicators": "overall biological age: BMI overweight, central adiposity, markedly elevated hs-CRP, unfavorable lipid profile, poor diet, alcohol, high physical activity, never smoker, normal BP, normal glycemic status#cardiovascular age: LDL 3.68, low HDL 1.08, central adiposity, elevated hs-CRP, alcohol, normal BP, never smoker, physically active#hepatic age: normal ALT/AST/GGT, alcohol use, poor diet, overweight#pulmonary age: never smoker, high physical activity, no respiratory history#renal age: creatinine 58 umol/L normal, normal BP, young age#metabolic system age: central adiposity, BMI overweight, unfavorable lipids, elevated hs-CRP, poor diet (high sugar-sweetened beverages, low fruit/vegetable), normal HbA1c, normal OGTT#musculoskeletal age: high physical activity, high MET, overweight/joint loading",
+    "overall biological age": 34,
+    "cardiovascular age": 33,
+    "hepatic age": 28,
+    "pulmonary age": 24,
+    "renal age": 24,
+    "metabolic system age": 35,
+    "musculoskeletal age": 27
+}
+```
+```json
+{
+    "inference process": "This 30.35-year-old Chinese female (inferred from height/weight profile) presents with several concerning indicators. Overall: BMI 28.82 (overweight), central adiposity (waist 97cm), elevated BP (124/87), low physical activity, alcohol use, very poor diet (near-zero fruit/vegetable intake), moderate hs-CRP (1.6 mg/L), and moderate cardiometabolic risk. Protective factors include never smoking, normal HbA1c, normal liver enzymes, normal creatinine, and normal glucose metabolism. Overall biological age is pushed above chronological age by obesity, central adiposity, elevated BP, inflammation, poor diet, and low activity, partially offset by protective factors. Cardiovascular age: elevated diastolic BP (87 mmHg), central adiposity, overweight, moderate hs-CRP, heart rate 84.67 bpm, intermediate lipid risk — these push cardiovascular age notably higher; HDL 1.46 is acceptable. Cardiovascular age estimated ~38-40. Hepatic age: liver enzymes (ALT 18, AST 18, GGT 20) all normal, no fatty liver markers in enzymes, though obesity/central adiposity raises concern — hepatic age close to or slightly above chronological. Pulmonary age: no spirometry data, never smoker, low activity but no direct pulmonary pathology indicators — estimate near chronological age. Renal age: creatinine 53 umol/L normal, no renal disease — renal age near or slightly below chronological. Metabolic system age: overweight, central adiposity, waist 97cm, HbA1c 5.5% (upper normal), triglycerides 0.73 (good), HDL 1.46 (acceptable), intermediate lipid risk, moderate hs-CRP, poor diet — metabolic age moderately elevated. Musculoskeletal age: low physical activity (0 min walking/week), low MET, overweight — musculoskeletal age moderately elevated due to sedentary lifestyle and excess weight.",
+    "key indicators": "overall biological age: BMI overweight, central adiposity (waist 97cm), elevated BP, low physical activity, poor diet (near-zero fruit/vegetable), moderate hs-CRP, alcohol use, never smoker, normal glycemic status#cardiovascular age: diastolic BP 87 mmHg, elevated systolic BP, central adiposity, overweight, heart rate 84.67, moderate hs-CRP, intermediate lipid risk#hepatic age: normal ALT/AST/GGT, obesity/central adiposity risk, alcohol use#pulmonary age: never smoker, no spirometry data, low physical activity#renal age: creatinine 53 umol/L normal, no renal disease history#metabolic system age: BMI 28.82, waist 97cm, HbA1c 5.5%, intermediate lipid risk, poor diet, moderate hs-CRP, normal OGTT#musculoskeletal age: 0 min walking/week, low MET 240 min/week, overweight, low physical activity",
+    "overall biological age": 38,
+    "cardiovascular age": 42,
+    "hepatic age": 33,
+    "pulmonary age": 31,
+    "renal age": 28,
+    "metabolic system age": 39,
+    "musculoskeletal age": 36
+}
+```
+```json
+{
+    "inference process": "This 29-year-old Malay female (assumed female given waist circumference context) has several concerning indicators despite young chronological age. Key aging drivers: BMI 27.89 (overweight), central adiposity (waist 102.6 cm is significantly elevated), elevated hs-CRP 4.5 mg/L indicating systemic inflammation, unfavorable lipid profile (triglycerides 1.28, HDL 1.25 - borderline low, LDL 2.88), high sugar-sweetened beverage intake, very low vegetable intake (17 g/day), and elevated resting heart rate (90 bpm). Protective factors: never smoker, no alcohol, moderate physical activity, normal blood pressure, excellent glycemic control (HbA1c 4.3%), normal liver enzymes, normal renal function, normal OGTT. Overall biological age: central adiposity, elevated inflammation, unfavorable lipids, poor diet quality, and elevated HR push age above chronological; protective metabolic and lifestyle factors partially offset this — estimated ~35. Cardiovascular age: elevated HR (90 bpm), central obesity, unfavorable lipids, elevated hs-CRP, but normal BP and glycemia — estimated ~37. Hepatic age: liver enzymes all normal (ALT 10, AST 16, GGT 12), no alcohol, but central adiposity raises NAFLD risk — estimated ~32. Pulmonary age: no smoking, moderate activity, no known respiratory disease — estimated ~28. Renal age: creatinine 69 umol/L, normal renal status — estimated ~28. Metabolic system age: central adiposity, unfavorable lipids, elevated inflammation, high SSB intake, but HbA1c 4.3% and normal OGTT are very protective — estimated ~34. Musculoskeletal age: moderate physical activity, no specific musculoskeletal issues noted, low income/not working may limit activity variety — estimated ~30.",
+    "key indicators": "overall biological age: BMI overweight, central adiposity (waist 102.6 cm), elevated hs-CRP, unfavorable lipids, high SSB intake, very low vegetable intake, elevated HR, normal BP, never smoker, normal glycemia#cardiovascular age: elevated HR (90 bpm), central adiposity, unfavorable lipid profile, elevated hs-CRP, normal blood pressure, normal HbA1c, never smoker#hepatic age: normal ALT/AST/GGT, no alcohol, central adiposity (NAFLD risk), normal BMI-liver enzyme dissociation#pulmonary age: never smoker, moderate physical activity, no respiratory history#renal age: creatinine 69 umol/L, normal renal status, normal blood pressure#metabolic system age: central adiposity, unfavorable lipids (low HDL, elevated TG), elevated hs-CRP, high SSB intake, low vegetable intake, but HbA1c 4.3% and normal OGTT#musculoskeletal age: moderate physical activity (MET 1998), walking 60 min/week, overweight, no musculoskeletal disease reported",
+    "overall biological age": 35,
+    "cardiovascular age": 37,
+    "hepatic age": 32,
+    "pulmonary age": 28,
+    "renal age": 28,
+    "metabolic system age": 34,
+    "musculoskeletal age": 30
+}
+```

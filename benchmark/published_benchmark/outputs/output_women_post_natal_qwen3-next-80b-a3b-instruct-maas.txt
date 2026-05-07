@@ -1,0 +1,77 @@
+{
+    "inference process": "The person is 35.73 years old chronologically but exhibits multiple aging accelerators: obesity (BMI 32.3), central adiposity, low physical activity, smoking, elevated hs-CRP (inflammation), mixed dyslipidemia, and borderline high uric acid. These strongly suggest accelerated aging across systems. Cardiovascular and metabolic systems are most affected; liver and kidneys remain normal despite metabolic stress. Pulmonary aging is modest due to smoking but not severe yet. Musculoskeletal age is elevated due to inactivity and obesity. Overall biological age is significantly higher than chronological age.",
+    "key indicators": "overall biological age: BMI, smoking, low physical activity, elevated hs-CRP, mixed dyslipidemia#cardiovascular age: smoking, obesity, elevated hs-CRP, mixed dyslipidemia, elevated BP#hepatic age: normal liver enzymes#pulmonary age: smoking#renal age: normal creatinine, borderline uric acid#metabolic system age: obesity, elevated hs-CRP, mixed dyslipidemia, normal HbA1c#musculoskeletal age: low physical activity, obesity",
+    "overall biological age": 48,
+    "cardiovascular age": 47,
+    "hepatic_age": 34,
+    "pulmonary_age": 42,
+    "renal_age": 38,
+    "metabolic_system_age": 46,
+    "musculoskeletal_age": 45
+}
+{
+    "inference process": "Despite normal blood pressure, glucose, and renal function, the individual has severe obesity (BMI 42.4), central adiposity, elevated hs-CRP (inflammation), elevated liver enzymes (ALT/AST), and high uric acid — all strong indicators of accelerated aging. These suggest significant metabolic and organ stress. No smoking or alcohol abuse, but obesity-driven inflammation and fatty liver likely dominate aging patterns. Musculoskeletal age is elevated due to weight burden. Pulmonary age is likely normal without respiratory data. Overall biological age is substantially higher than chronological age.",
+    "key indicators": "overall biological age: BMI 42.4, elevated hs-CRP, elevated ALT/AST, high uric acid#cardiovascular age: normal BP, normal lipids, no smoking#hepatic age: ALT 39, AST 29, central obesity#pulmonary age: no data, assumed normal#renal age: normal creatinine#metabolic system age: BMI 42.4, elevated hs-CRP, high uric acid, mild lipid abnormality#musculoskeletal age: BMI 42.4, high waist circumference",
+    "overall biological age": 52,
+    "cardiovascular age": 38,
+    "hepatic_age": 48,
+    "pulmonary_age": 36,
+    "renal_age": 35,
+    "metabolic_system_age": 50,
+    "musculoskeletal_age": 47
+}
+{
+    "inference process": "The individual is underweight (BMI 17) with normal blood pressure, lipid profile, liver, kidney, and glucose markers, suggesting minimal organ damage. Moderate physical activity and no smoking support youthfulness. However, low BMI and moderate hs-CRP may indicate mild systemic stress or nutritional insufficiency, slightly accelerating aging. Family history of hypertension adds minor cardiovascular risk. Overall, biological age is slightly elevated due to underweight status and low-grade inflammation.",
+    "key indicators": "overall biological age: BMI, hs-CRP, family history of hypertension#cardiovascular age: family history of hypertension, normal BP, normal lipids#hepatic age: normal ALT, AST, GGT#pulmonary age: normal physical activity, no smoking#renal age: normal creatinine, normal uric acid#metabolic system age: normal HbA1c, normal OGTT, normal triglycerides#musculoskeletal age: low BMI, moderate activity",
+    "overall biological age": 44,
+    "cardiovascular age": 42,
+    "hepatic_age": 40,
+    "pulmonary_age": 38,
+    "renal_age": 39,
+    "metabolic_system_age": 40,
+    "musculoskeletal_age": 45
+}
+{
+    "inference process": "The individual has a normal BMI, low inflammation, excellent lipid and glucose profiles, and normal organ function markers. However, complete physical inactivity (0 MET-min/week) is a major risk factor for accelerated aging across systems, particularly cardiovascular, musculoskeletal, and metabolic. No smoking or alcohol abuse, and no chronic disease history suggest resilience, but sedentary behavior dominates the aging signal. Biological age is slightly elevated due to inactivity, while organ-specific ages reflect preserved function except for musculoskeletal and metabolic systems, which are impacted by lack of activity.",
+    "key indicators": "overall biological age: physical inactivity, normal BMI, normal biomarkers#cardiovascular age: physical inactivity, normal BP, normal lipids#hepatic age: normal ALT/AST#pulmonary age: no data, assumed normal due to no smoking or disease#renal age: normal creatinine, normal uric acid#metabolic system age: physical inactivity, normal HbA1c, normal triglycerides#musculoskeletal age: physical inactivity, low weight, no strength data",
+    "overall biological age": 45,
+    "cardiovascular age": 44,
+    "hepatic_age": 41,
+    "pulmonary_age": 42,
+    "renal_age": 40,
+    "metabolic_system_age": 46,
+    "musculoskeletal_age": 48
+}
+{
+    "inference process": "The person is 47.35 years old with normal blood pressure, heart rate, liver, kidney, and glucose markers, but elevated hs-CRP and mild dyslipidemia indicate chronic inflammation and metabolic stress. Overweight with central adiposity and moderate physical activity suggest accelerated metabolic and cardiovascular aging. No smoking or alcohol abuse is protective. Musculoskeletal age is preserved due to adequate activity. Overall biological age is elevated due to inflammation and adiposity.",
+    "key indicators": "overall biological age: BMI, waist circumference, hs-CRP, triglycerides#cardiovascular age: waist circumference, triglycerides, hs-CRP#hepatic age: normal ALT, AST, GGT#pulmonary age: not assessed (assumed normal)#renal age: normal creatinine, uric acid#metabolic system age: BMI, waist circumference, triglycerides, HbA1c, hs-CRP#musculoskeletal age: physical activity, BMI",
+    "overall biological age": 52,
+    "cardiovascular age": 51,
+    "hepatic_age": 46,
+    "pulmonary_age": 47,
+    "renal_age": 45,
+    "metabolic_system_age": 53,
+    "musculoskeletal_age": 48
+}
+{
+    "inference process": "The individual has a high physical activity level, normal blood pressure, lipid profile, liver and renal function, and low inflammation, all indicating youthful organ systems. However, BMI is overweight and she had gestational diabetes, suggesting mild metabolic stress. No smoking or alcohol abuse, and strong activity levels offset these risks. Overall biological age is slightly elevated due to adiposity and gestational diabetes history, but organ-specific ages remain young.",
+    "key indicators": "overall biological age: BMI, gestational diabetes, physical activity#cardiovascular age: blood pressure, lipid profile, physical activity#hepatic age: ALT, AST, GGT#pulmonary age: physical activity#renal age: creatinine, uric acid#metabolic system age: BMI, HbA1c, gestational diabetes#musculoskeletal age: physical activity, BMI",
+    "overall biological age": 47,
+    "cardiovascular age": 42,
+    "hepatic_age": 43,
+    "pulmonary_age": 40,
+    "renal_age": 41,
+    "metabolic_system_age": 50,
+    "musculoskeletal_age": 42
+}
+{
+  "inference process": "Despite normal blood pressure, lipid profile, and renal function, the individual is obese (BMI 31.3) with elevated liver enzymes (ALT, AST, GGT) indicating non-alcoholic fatty liver disease, and moderate inflammation (hs-CRP 2.6 mg/L). Physical activity is moderate but insufficient to offset obesity-related aging. No smoking or alcohol abuse, but metabolic and hepatic stress accelerate aging. Musculoskeletal age is slightly elevated due to obesity. Cardiovascular age is near chronological due to normal BP and lipids. Pulmonary age is normal due to no smoking and adequate activity.",
+  "key indicators": "overall biological age: BMI, ALT, AST, GGT, hs-CRP#cardiovascular age: BP, LDL, HDL, physical activity#hepatic age: ALT, AST, GGT, BMI#pulmonary age: physical activity, no smoking#renal age: creatinine#metabolic system age: BMI, HbA1c, hs-CRP#musculoskeletal age: BMI, physical activity",
+  "overall biological age": 41,
+  "cardiovascular age": 33,
+  "hepatic_age": 48,
+  "pulmonary_age": 31,
+  "renal_age": 30,
+  "metabolic_system_age": 43,
+  "musculoskeletal_age": 38
+}

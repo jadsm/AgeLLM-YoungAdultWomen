@@ -25,7 +25,7 @@ if __name__ == "__main__":
   paths = {"women_pre_natal":"data/source_data/women_before_pregnancy.jsonl",
            "women_post_natal":"data/source_data/women_after_pregnancy.jsonl"}
   repeats = 5
-  for k in range(repeats):
+  for k in [4]:#range(repeats):
     for name, path in paths.items():
       # load contents from file
       with open(path, "r") as f:
@@ -33,11 +33,11 @@ if __name__ == "__main__":
 
       #  model = "gemini-3.1-pro-preview","gemini-3.1-flash-lite-preview","claude-sonnet-4-6","qwen3-next-80b-a3b-instruct-maas","gpt-oss-20b-maas"
       # models = ["llama-3.3-70b-instruct-maas"]
-      models = ["claude-sonnet-4-6"]
+      models = ["gemini-3.1-pro-preview","gemini-3.1-flash-lite-preview","claude-sonnet-4-6"]
       
       for model in models:
-        responses = [generate(content, model, seed=58) for content in content_strings]
-        with open(f"outputs/output_{name}_{model}_{k}_seed{58}.txt", "w") as f:
+        responses = [generate(content, model, seed=k) for content in content_strings]
+        with open(f"outputs/output_{name}_{model}_{k}_seed{k}.txt", "w") as f:
           for response in responses:
             f.write(response + "\n")
-            print(f'Finished generating! {name}_{model}_{k}_seed{58}')
+        print(f'Finished generating! {name}_{model}_{k}_seed{k}')
