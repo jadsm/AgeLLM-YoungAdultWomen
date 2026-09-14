@@ -24,7 +24,8 @@ def retreive_data(model_path):
     
 # read the data
 a = []
-filter_conditions = "seed[0-4]"
+# filter_conditions = "seed[0-4]"
+filter_conditions = "prompt[0-2]"
 for model_path in os.listdir("outputs"):
     if not model_path.endswith(".txt") or not re.search(rf"{filter_conditions}", model_path):
         continue
@@ -51,7 +52,7 @@ def assign_cohort(name):
         df.loc[idx, 'trial'] = df.loc[idx, 'model'].str.extract(r'_(\d+)_seed', expand=False).astype(float)
         df.loc[idx,'model'] = df.loc[idx,'model'].str.replace(r"_(\d+)_"+filter_conditions, "",regex=True).str.strip("_")
     # remove the filter conditions 
-    df.loc[idx,'model'] = df.loc[idx,'model'].str.replace(filter_conditions, "").str.strip("_")
+    df.loc[idx,'model'] = df.loc[idx,'model'].str.replace(filter_conditions, "",regex=True).str.strip("_")
     df.loc[idx,'model'] = df.loc[idx,'model'].str.replace(name, "").str.strip("_")
     return df
 df = assign_cohort('women_pre_natal')
@@ -80,7 +81,7 @@ df['chronological_age'] = df.set_index(['patient', 'cohort']).index.map(real_age
 
 df_reasoning = df.loc[:,['patient', 'model','inference_process', 'key_indicators']]
 df.drop(columns=['inference_process', 'key_indicators'], inplace=True)
-df_reasoning.to_csv("outputs/reasoning_and_indicators.csv", index=False)
+df_reasoning.to_csv(f"outputs/reasoning_and_indicators{filter_conditions}.csv", index=False)
 
 # discrepancies in repeats
 agecols = [col for col in df.columns if 'age' in col]

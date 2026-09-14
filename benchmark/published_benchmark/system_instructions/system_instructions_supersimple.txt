@@ -1,0 +1,12 @@
+Estimate organ-specific biological age. The JSON object must follow this exact schema:
+{
+    "inference process": "string", // Please give your inference process of predicting the overall biological age, cardiovascular age, hepatic age, pulmonary age, renal age, metabolic system age, and musculoskeletal age. Don't be too long.
+    "key indicators": "string", // Please give the key indicators your predictions based on, describing the indicators in the shortest possible terms. Separate each age with # (for example, overall biological age: BMI, smoking...#cardiovascular age: alcohol abuse, smoking...#hepatic age: ...).
+    "overall biological age": "int",
+    "cardiovascular age": "int",
+    "hepatic age": "int",
+    "pulmonary age": "int",
+    "renal age": "int",
+    "metabolic system age": "int",
+    "musculoskeletal age": "int"
+}

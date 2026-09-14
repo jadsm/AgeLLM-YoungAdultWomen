@@ -6,12 +6,8 @@ from utils import parse_content, config
 import os
 import subprocess
 
-def generate_gemini(content: str,model: str,seed: int = None) -> str:
+def generate_gemini(content: str,model: str,si_text1: str,seed: int = None) -> str:
     client = genai.Client(vertexai=True,api_key=os.environ.get("GOOGLE_CLOUD_API_KEY"))
-    
-    # load system instruction from file
-    with open("system_instructions.txt", "r") as f:
-      si_text1 = f.read()
 
     # load contents from file
     contents = parse_content(content)
@@ -28,18 +24,20 @@ def generate_gemini(content: str,model: str,seed: int = None) -> str:
     
     return "".join(output)
   
-def generate_claude_sonnet(content: str,model: str) -> str:
+def generate_claude_sonnet(content: str,model: str,si_text1: str) -> str:
     """
     Generates a response from the Claude Sonnet model using the Vertex AI API.
 
     Args:
         content: The user's input content.
-
+        si_text1: The system instruction text.
+        model: The model to use for generation, e.g., "claude-sonnet-4-6"
     Returns:
         The generated response from the model.
     """
-    endpoint = "asia-southeast1-aiplatform.googleapis.com"
-    location_id = "asia-southeast1"
+    # claude-sonnet-5 and newer are only served on global/us/eu endpoints, not regional ones
+    endpoint = "aiplatform.googleapis.com"
+    location_id = "global"
     project_id = "imperial-410612"
     model_id = model
     method = "streamRawPredict"
@@ -52,8 +50,8 @@ def generate_claude_sonnet(content: str,model: str) -> str:
     
     access_token = subprocess.check_output(["gcloud", "auth", "print-access-token"]).decode("utf-8").strip()
 
-    with open("system_instructions.txt", "r") as f:
-      si_text1 = f.read()
+    # with open("system_instructions.txt", "r") as f:
+    #   si_text1 = f.read()
 
     headers = {
         "Authorization": f"Bearer {access_token}",
@@ -64,7 +62,6 @@ def generate_claude_sonnet(content: str,model: str) -> str:
         "anthropic_version": "vertex-2023-10-16",
         "stream": False,  # Set to False for a single response, True for streaming
         "max_tokens": 20000,
-        "top_p": 0.95,
         "messages": [
             {
                 "role": "user",
@@ -74,24 +71,26 @@ def generate_claude_sonnet(content: str,model: str) -> str:
             }
         ]
     }
+    # sampling params (top_p/temperature) return a 400 on claude-sonnet-5 and newer
+    if model in ("claude-sonnet-4-6", "claude-sonnet-4-5@20250929"):
+        payload["top_p"] = 0.95
 
     response = requests.post(url, headers=headers, json=payload)
     response.raise_for_status()  # Raise an exception for HTTP errors
 
-    # Assuming the response is JSON and contains a 'text' field in the last message
+    # newer models think by default, so the first block may be a thinking block; keep only text blocks
     response_data = response.json()
-    if "content" in response_data and response_data["content"]:
-        return response_data["content"][0].get("text", "")
-    return ""
+    return "".join(block.get("text", "") for block in response_data.get("content", []) if block.get("type") == "text")
 
 
-def generate_openai(content: str,model: str,location_id:str = "global", seed: int = None) -> str:
+def generate_openai(content: str,model: str,si_text1: str,location_id:str = "global", seed: int = None) -> str:
     """
     Generates a response from the models using the Vertex AI API.
 
     Args:
         content: The user's input content.
         model: The model to use for generation, e.g., "qwen/qwen3-next-80b-a3b-instruct-maas", "openai/gpt-oss-20b-maas", "meta/llama-3.3-70b-instruct-maas"
+        si_text1: The system instruction text.
         location_id: The location of the model endpoint, e.g., "global", "us-central1". Default is "global".
 
     Returns:
@@ -108,8 +107,8 @@ def generate_openai(content: str,model: str,location_id:str = "global", seed: in
     
     access_token = subprocess.check_output(["gcloud", "auth", "print-access-token"]).decode("utf-8").strip()
 
-    with open("system_instructions.txt", "r") as f:
-      si_text1 = f.read()
+    # with open("system_instructions.txt", "r") as f:
+    #   si_text1 = f.read()
 
     headers = {
         "Authorization": f"Bearer {access_token}",

@@ -1,0 +1,9 @@
+,Claude Sonnet,Gemini Flash,Gemini Pro
+overall_biological_age,0.58,0.58,0.00
+cardiovascular_age,1.15,1.00,0.58
+hepatic_age,1.15,0.58,0.58
+pulmonary_age,1.73,0.58,0.58
+renal_age,1.00,0.00,0.58
+metabolic_system_age,2.04,1.15,0.58
+musculoskeletal_age,1.34,0.58,0.58
+,,,
