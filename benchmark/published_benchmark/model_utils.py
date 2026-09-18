@@ -7,7 +7,10 @@ import os
 import subprocess
 
 def generate_gemini(content: str,model: str,si_text1: str,seed: int = None) -> str:
-    client = genai.Client(vertexai=True,api_key=os.environ.get("GOOGLE_CLOUD_API_KEY"))
+    # retry with exponential backoff on rate limits (429) and transient server errors
+    retry_options = types.HttpRetryOptions(attempts=8, initial_delay=5, max_delay=120, exp_base=2, jitter=1, http_status_codes=[429, 500, 503, 504])
+    client = genai.Client(vertexai=True,api_key=os.environ.get("GOOGLE_CLOUD_API_KEY"),
+                          http_options=types.HttpOptions(retry_options=retry_options))
 
     # load contents from file
     contents = parse_content(content)

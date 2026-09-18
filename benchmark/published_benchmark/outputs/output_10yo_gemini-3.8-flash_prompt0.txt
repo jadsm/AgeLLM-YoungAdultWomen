@@ -1,0 +1,220 @@
+{
+    "inference process": "The subject is a 10-year-old boy of normal weight and height. Cardiovascular metrics show blood pressure within normal limits for age and height percentiles, though lipid profiles indicate borderline elevated total and LDL cholesterol. Hepatic and renal markers (ALT, AST, GGT, creatinine) are well within healthy pediatric reference intervals. Glycemic control is optimal with normal fasting glucose and low insulin. High hs-CRP (5.1 mg/L) indicates acute or systemic inflammation, which slightly advances systemic biological wear, but most organ profiles remain aligned with chronological age. Musculoskeletal and pulmonary functions are nominally aligned with healthy normal-weight pediatric baseline.",
+    "key indicators": "overall biological age: elevated hs-CRP, borderline LDL/total cholesterol, normal BMI#cardiovascular age: normal blood pressure, borderline total and LDL cholesterol#hepatic age: normal ALT, AST, GGT#pulmonary age: healthy weight, no reported pulmonary distress#renal age: normal pediatric creatinine#metabolic system age: normal fasting glucose, normal fasting insulin, favorable triglyceride/HDL ratio#musculoskeletal age: normal height, normal BMI",
+    "overall biological age": 11,
+    "cardiovascular age": 11,
+    "hepatic age": 10,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 10,
+    "musculoskeletal age": 10
+}
+{
+  "inference process": "The individual is a 10.21-year-old girl with normal growth metrics (BMI 16.2 kg/m^2). Cardiovascular indicators are healthy (BP 96/56 mmHg, MAP 70 mmHg). Liver markers (ALT 12, AST 23, GGT 12 U/L) and renal markers (creatinine 50 umol/L) are fully optimal for her pediatric stage. Metabolic profile reveals slightly borderline total cholesterol (4.6 mmol/L) and borderline triglycerides (1.3 mmol/L), alongside intermediate hs-CRP (2.8 mg/L), indicating minor metabolic and inflammatory activation without systemic organ deviation. Overall, biological maturity remains closely aligned with her chronological age across major organ systems.",
+  "key indicators": "overall biological age: BMI, blood pressure, lipid profile, hs-CRP#cardiovascular age: blood pressure, pulse, MAP#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing score#renal age: serum creatinine#metabolic system age: fasting glucose, fasting insulin, total cholesterol, triglycerides, hs-CRP#musculoskeletal age: height-for-age, BMI-for-age",
+  "overall biological age": 10,
+  "cardiovascular age": 10,
+  "hepatic age": 10,
+  "pulmonary age": 10,
+  "renal age": 10,
+  "metabolic system age": 11,
+  "musculoskeletal age": 10
+}
+{
+    "inference process": "The subject is a 10.12-year-old boy presenting with childhood obesity (BMI 25.02 kg/m^2) and significantly elevated liver enzymes (ALT 119 U/L, AST 71 U/L, GGT 41 U/L) indicative of pediatric non-alcoholic fatty liver disease (NAFLD/MASLD), which accelerates hepatic and overall biological aging. Elevated hs-CRP (3 mg/L) indicates underlying systemic inflammation. Cardiovascular indices (BP 105/55 mmHg) and lipid panel remain relatively favorable, keeping cardiovascular age near chronological age. Renal function (creatinine 55 umol/L) is normal for age. Mild hyperinsulinemia (fasting insulin 15.9 mU/L) reflects emerging metabolic strain due to adiposity.",
+    "key indicators": "overall biological age: BMI obesity, elevated ALT/AST, hs-CRP#cardiovascular age: normal blood pressure, normal lipid profile#hepatic age: highly elevated ALT, elevated AST, elevated GGT#pulmonary age: CSHQ sleep disordered breathing score#renal age: normal creatinine#metabolic system age: obesity, fasting insulin, fasting glucose#musculoskeletal age: BMI, normal height-for-age",
+    "overall biological age": 13,
+    "cardiovascular age": 10,
+    "hepatic age": 16,
+    "pulmonary age": 11,
+    "renal age": 10,
+    "metabolic system age": 14,
+    "musculoskeletal age": 11
+}
+{
+  "inference process": "The subject is a 10.12-year-old boy showing healthy pediatric development across major physiological domains. Growth parameters (BMI, height, weight) align appropriately with age norms. Cardiovascular indicators are pristine, with optimal pediatric blood pressure (98/53 mmHg) and pulse (80 bpm). Metabolic and lipid panels reflect excellent glycemic control (fasting glucose 4.8 mmol/L, fasting insulin 4.4 mU/L) and mostly acceptable lipids, with only marginally borderline total cholesterol. Hepatic enzymes (ALT, AST, GGT) are well within normal pediatric reference limits, demonstrating optimal liver health. Serum creatinine is fully congruent with pediatric renal baselines. Sleep architecture shows mild bedtime resistance/sleep anxiety on CSHQ, but sleep duration remains adequate. Biological maturity aligns directly with chronological age with slight positive metabolic health.",
+  "key indicators": "overall biological age: BMI, blood pressure, fasting glucose, hepatic enzymes#cardiovascular age: systolic blood pressure, diastolic blood pressure, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: absence of sleep-disordered breathing, resting vital stability#renal age: serum creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides, HDL cholesterol#musculoskeletal age: BMI-for-age, height-for-age, normal growth trajectory",
+  "overall biological age": 10,
+  "cardiovascular age": 10,
+  "hepatic age": 10,
+  "pulmonary age": 10,
+  "renal age": 10,
+  "metabolic system age": 10,
+  "musculoskeletal age": 10
+}
+{
+    "inference process": "The subject is a 10.16-year-old girl with normal BMI and height development. Hepatic enzymes (ALT, AST, GGT) and renal function (creatinine) are optimal and match her chronological age. Metabolic indices show optimal glucose and insulin dynamics, but lipid profile indicates elevated total cholesterol and LDL, reflecting mild dyslipidemia that slightly accelerates cardiovascular and metabolic biological aging. Elevated systolic blood pressure (125 mmHg) also increases cardiovascular aging slightly above chronological age. Pulmonary and musculoskeletal profiles remain typical for a healthy child without overt pathology.",
+    "key indicators": "overall biological age: elevated SBP, elevated LDL and total cholesterol, normal BMI and liver/renal markers#cardiovascular age: elevated SBP (125 mmHg), high total and LDL cholesterol#hepatic age: normal ALT, AST, and GGT#pulmonary age: absence of respiratory distress, normal sleep-disordered breathing scores#renal age: normal creatinine (47 umol/L)#metabolic system age: normal fasting glucose and insulin, elevated total and LDL cholesterol#musculoskeletal age: normal BMI-for-age, normal height growth percentile",
+    "overall biological age": 11,
+    "cardiovascular age": 12,
+    "hepatic age": 10,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 11,
+    "musculoskeletal age": 10
+}
+{
+    "inference process": "The subject is a 10.11-year-old girl presenting with obesity (BMI 25.98 kg/m^2) and elevated resting pulse (104 bpm), though resting blood pressure remains normal. Liver enzymes show ALT elevation (46 U/L, >2x pediatric sex-specific ULN) suggesting early non-alcoholic fatty liver disease, significantly accelerating hepatic age. Fasting insulin is somewhat elevated (15.2 mU/L) alongside intermediate inflammation (hs-CRP 1.6 mg/L) and borderline triglycerides, indicating accelerated metabolic wear. Renal function is normal for age (creatinine 47 umol/L). Pulmonary and musculoskeletal systems do not show overt disease, but overall obesity contributes to mild systemic biological advancement.",
+    "key indicators": "overall biological age: BMI, hs-CRP, resting pulse#cardiovascular age: resting pulse, blood pressure, lipid profile#hepatic age: elevated ALT, AST#pulmonary age: BMI, sleep-disordered breathing score#renal age: serum creatinine#metabolic system age: BMI, fasting insulin, borderline triglycerides, hs-CRP#musculoskeletal age: BMI, normal height-for-age",
+    "overall biological age": 12,
+    "cardiovascular age": 11,
+    "hepatic age": 14,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 13,
+    "musculoskeletal age": 11
+}
+{
+  "inference process": "The subject is a 10.09-year-old boy presenting with healthy, normative pediatric markers across all domains. Anthropometry shows normal BMI and height-for-age. Cardiovascular markers (BP 107/60 mmHg, MAP 77 mmHg, pulse 83 bpm) are optimal for a 10-year-old child. Fasting glucose (4.8 mmol/L) and insulin (4.6 mU/L) along with lipid panels reflect excellent metabolic health. Hepatic transaminases (ALT 22 U/L, AST 30 U/L, GGT 10 U/L) and creatinine (38 umol/L) are fully aligned with a healthy 10-year-old male profile. Sleep scores indicate minor behavioral sleep variations typical of this age group. Biological organ and overall ages concordantly reflect the chronological age of approximately 10 years.",
+  "key indicators": "overall biological age: BMI, normal development, blood pressure, lipid profile, glucose#cardiovascular age: SBP 107 mmHg, DBP 60 mmHg, pulse 83 bpm, lipids#hepatic age: ALT 22 U/L, AST 30 U/L, GGT 10 U/L#pulmonary age: absence of sleep-disordered breathing, healthy vitals#renal age: serum creatinine 38 umol/L#metabolic system age: fasting glucose 4.8 mmol/L, fasting insulin 4.6 mU/L, normal lipid panel#musculoskeletal age: normal height and weight-for-age",
+  "overall biological age": 10,
+  "cardiovascular age": 10,
+  "hepatic age": 10,
+  "pulmonary age": 10,
+  "renal age": 10,
+  "metabolic system age": 10,
+  "musculoskeletal age": 10
+}
+{
+    "inference process": "The subject is a 10.09-year-old girl classified as overweight based on BMI-for-age. Her cardiovascular indicators (blood pressure 107/59 mmHg, pulse 79 bpm) are healthy and appropriate for her age. Metabolic markers show borderline total cholesterol and slightly elevated fasting insulin (16 mU/L), alongside normal fasting glucose, indicative of mild early metabolic strain from excess adiposity. Hepatic markers indicate ALT (25 U/L) slightly above pediatric sex-specific norms, suggesting mild hepatic stress/steatosis risk. Renal function (creatinine 41 umol/L) is completely normal. Sleep patterns and low inflammatory markers (hs-CRP 0.9 mg/L) reflect general physiological health. Musculoskeletal and pulmonary functions show no signs of deterioration beyond slight load from overweight status.",
+    "key indicators": "overall biological age: BMI-for-age (overweight), ALT, fasting insulin#cardiovascular age: blood pressure, pulse, lipid profile#hepatic age: ALT (above pediatric limit), AST, GGT#pulmonary age: BMI, absence of sleep-disordered breathing#renal age: serum creatinine#metabolic system age: fasting insulin, BMI, borderline total cholesterol#musculoskeletal age: BMI, height-for-age",
+    "overall biological age": 11,
+    "cardiovascular age": 10,
+    "hepatic age": 12,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 12,
+    "musculoskeletal age": 10
+}
+{
+    "inference process": "The subject is a 10.08-year-old girl with normal weight, height, and healthy lifestyle habits, including adequate sleep. Her glucose metabolism, renal markers (creatinine 45 umol/L), and hepatic enzymes (ALT 22, AST 31, GGT 16) are all well within optimal pediatric ranges, keeping hepatic, renal, and metabolic ages closely aligned with her chronological age. Her blood pressure and resting pulse are typical for her age, but she shows slightly elevated total cholesterol (5.7 mmol/L) and borderline LDL cholesterol (3.3 mmol/L), though her HDL is protective and TG/HDL ratio is optimal, resulting in a very mild cardiovascular advancement. Pulmonary and musculoskeletal profiles remain consistent with a healthy 10-year-old child.",
+    "key indicators": "overall biological age: BMI, total cholesterol, blood pressure, fasting glucose#cardiovascular age: blood pressure, pulse, total cholesterol, LDL cholesterol#hepatic age: ALT, AST, GGT#pulmonary age: absence of sleep-disordered breathing, healthy body size#renal age: serum creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides, HDL cholesterol#musculoskeletal age: BMI, normal height-for-age, normal developmental status",
+    "overall biological age": 10,
+    "cardiovascular age": 11,
+    "hepatic age": 10,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 10,
+    "musculoskeletal age": 10
+}
+{
+    "inference process": "The subject is a 10.13-year-old boy presenting with obesity (BMI 25.73 kg/m^2). Systolic blood pressure is elevated (124 mmHg) for his age, indicating early cardiovascular vascular loading/stiffness. Fasting insulin is elevated (20.7 mU/L) reflecting marked insulin resistance, alongside intermediate systemic inflammation (hs-CRP 2.8 mg/L). Hepatic transaminase ALT is elevated (41 U/L), indicative of early pediatric non-alcoholic fatty liver changes. Lipid panel is currently acceptable, and creatinine (45 umol/L) aligns well with pediatric norms. Pulmonary and musculoskeletal systems are minimally impaired directly, though excess adiposity confers mild functional stress.",
+    "key indicators": "overall biological age: obesity, high fasting insulin, elevated ALT, elevated SBP, elevated hs-CRP#cardiovascular age: SBP 124 mmHg, MAP 85 mmHg#hepatic age: ALT 41 U/L above pediatric limit, AST 34 U/L#pulmonary age: pediatric obesity status, absence of specific spirometry issues#renal age: normal creatinine 45 umol/L#metabolic system age: BMI 25.73 kg/m^2, fasting insulin 20.7 mU/L, hs-CRP 2.8 mg/L#musculoskeletal age: normal height-for-age, excess weight burden",
+    "overall biological age": 13,
+    "cardiovascular age": 13,
+    "hepatic age": 14,
+    "pulmonary age": 11,
+    "renal age": 10,
+    "metabolic system age": 15,
+    "musculoskeletal age": 11
+}
+{
+    "inference process": "The subject is a 10.12-year-old girl with normal pediatric growth indicators (lean-to-normal BMI, normal height). Blood pressure, heart rate, liver function (ALT, AST, GGT), kidney markers (creatinine), and metabolic indices (glucose, insulin, TG/HDL ratio) are healthy and appropriate for her pediatric developmental stage. Total cholesterol and LDL are mildly borderline, slightly raising vascular/cardiovascular age slightly above baseline chronological maturity, while metabolic and hepatic functions reflect typical, healthy prepubertal maturation closely aligning with chronological age.",
+    "key indicators": "overall biological age: chronological age, BMI, normal organ panels#cardiovascular age: blood pressure, borderline total and LDL cholesterol, resting heart rate#hepatic age: ALT, AST, GGT within normal limits#pulmonary age: absence of respiratory distress, normal sleep-disordered breathing subscore#renal age: serum creatinine commensurate with age and muscle mass#metabolic system age: normal fasting glucose, insulin, and TG/HDL ratio#musculoskeletal age: normal height-for-age, normal weight-for-age, lean BMI",
+    "overall biological age": 10,
+    "cardiovascular age": 11,
+    "hepatic age": 10,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 10,
+    "musculoskeletal age": 10
+}
+{
+    "inference process": "The subject is a 10.21-year-old girl with normal weight, height, and body mass index. Cardiovascular indicators including blood pressure (99/57 mmHg) and resting heart rate are well within normal pediatric reference ranges, indicative of an aligned cardiovascular age. Liver enzymes (ALT, AST, GGT) are healthy, reflecting normal hepatic development. Renal markers (creatinine 43 umol/L) are fully age-appropriate. Metabolic markers show normal fasting glucose and lipid profiles, with only borderline HDL, but an overall favorable triglyceride-to-HDL ratio. Adequate sleep duration and absence of major organ pathology align her biological age tightly with her chronological age across systems.",
+    "key indicators": "overall biological age: BMI, blood pressure, fasting glucose, hepatic enzymes#cardiovascular age: blood pressure, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: absence of respiratory pathology, normal growth#renal age: serum creatinine#metabolic system age: fasting glucose, fasting insulin, lipid profile#musculoskeletal age: BMI, height-for-age, weight-for-age",
+    "overall biological age": 10,
+    "cardiovascular age": 10,
+    "hepatic age": 10,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 10,
+    "musculoskeletal age": 10
+}
+{
+  "inference process": "The subject is a 10-year-old female with normal weight and BMI-for-age. Cardiovascular markers show ideal blood pressure and heart rate, reflecting excellent cardiovascular status aligned with or slightly younger than age. Hepatic markers indicate mildly elevated ALT above pediatric upper limit, suggesting subtle hepatic stress (elevated hepatic age). Renal function is healthy, consistent with chronological age. Lipid panel shows high total cholesterol and borderline LDL, slightly offsetting otherwise normal glucose and insulin profiles. Sleep metrics indicate sleep debt and mild disturbance, but overall development corresponds closely to chronological age with minor system-specific variations.",
+  "key indicators": "overall biological age: BMI, total cholesterol, sleep disturbance#cardiovascular age: blood pressure, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: absence of pulmonary pathology, sleep-disordered breathing score#renal age: serum creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides, LDL cholesterol#musculoskeletal age: height-for-age, BMI-for-age",
+  "overall biological age": 10,
+  "cardiovascular age": 10,
+  "hepatic age": 12,
+  "pulmonary age": 10,
+  "renal age": 10,
+  "metabolic system age": 11,
+  "musculoskeletal age": 10
+}
+{
+    "inference process": "The subject is a 10.13-year-old girl presenting with pediatric obesity (BMI 23.31 kg/m^2) and significantly elevated systemic inflammation (hs-CRP 4.9 mg/L), along with borderline total cholesterol and triglycerides, and moderately high fasting insulin. These factors contribute to accelerated metabolic and overall biological aging. Blood pressure, hepatic enzymes (ALT, AST, GGT), and renal function (creatinine) are currently within healthy reference intervals for her chronological age, keeping cardiovascular, renal, and hepatic ages close to baseline, though slightly influenced by metabolic stress and adiposity. Pulmonary and musculoskeletal systems are mildly impacted by excess weight and sleep disturbance scores.",
+    "key indicators": "overall biological age: BMI obesity, hs-CRP elevated, borderline lipids#cardiovascular age: normal blood pressure, pulse, borderline triglycerides#hepatic age: normal ALT, AST, GGT#pulmonary age: pediatric obesity, CSHQ sleep disordered breathing score#renal age: normal creatinine#metabolic system age: obesity, fasting insulin, borderline cholesterol and triglycerides#musculoskeletal age: BMI, growth status",
+    "overall biological age": 12,
+    "cardiovascular age": 11,
+    "hepatic age": 10,
+    "pulmonary age": 11,
+    "renal age": 10,
+    "metabolic system age": 13,
+    "musculoskeletal age": 11
+}
+{
+    "inference process": "The subject is a 10.14-year-old girl with normal BMI and height-for-age. Her cardiovascular indicators are healthy with normal BP and pulse, although total and LDL cholesterol are slightly elevated/borderline, keeping cardiovascular age close to chronological. Liver markers (ALT, AST, GGT) are well within optimal ranges, reflecting excellent hepatic health. Renal function (creatinine 41 umol/L) is normal for her age and sex. Metabolic profiles are mostly normal with appropriate fasting glucose and insulin, balanced by mildly elevated total cholesterol. Sleep parameters demonstrate mild disturbances (CSHQ 44), but overall physiological status aligns closely with chronological age.",
+    "key indicators": "overall biological age: BMI, fasting glucose, blood pressure, cholesterol#cardiovascular age: SBP, DBP, MAP, pulse, total cholesterol, LDL cholesterol#hepatic age: ALT, AST, GGT#pulmonary age: CSHQ sleep disordered breathing, BMI#renal age: Creatinine#metabolic system age: Fasting glucose, fasting insulin, triglycerides, HDL#musculoskeletal age: Height, weight, BMI-for-age",
+    "overall biological age": 10,
+    "cardiovascular age": 11,
+    "hepatic age": 10,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 10,
+    "musculoskeletal age": 10
+}
+{
+    "inference process": "The individual is a healthy 10-year-old boy with normal anthropometrics (BMI 15.41 kg/m^2, normal height and weight percentiles). Blood pressure is low-normal to optimal (SBP 109 mmHg, DBP 35 mmHg, pulse 81 bpm). Glycemic profile (fasting glucose 5.1 mmol/L, fasting insulin 8.8 mU/L) and lipid markers (total cholesterol 3.6 mmol/L, triglycerides 0.5 mmol/L, HDL 1.3 mmol/L) demonstrate optimal metabolic and cardiovascular health. Hepatic function tests (ALT 17 U/L, AST 33 U/L, GGT 15 U/L) and renal function (creatinine 54 umol/L) are fully normal and age-appropriate. Sleep patterns show adequate duration despite mild pediatric sleep habit variations. Overall, all organ systems align closely with his chronological age or show youthful resilience, placing biological age marginally below or at chronological age.",
+    "key indicators": "overall biological age: BMI-for-age, normal growth parameters, healthy metabolic profile#cardiovascular age: blood pressure, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: absence of sleep-disordered breathing, resting pulse#renal age: serum creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides, HDL#musculoskeletal age: height-for-age, weight-for-age, BMI",
+    "overall biological age": 10,
+    "cardiovascular age": 10,
+    "hepatic age": 10,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 10,
+    "musculoskeletal age": 10
+}
+{
+    "inference process": "The subject is a 10.22-year-old boy presenting with healthy, normative pediatric markers across all domains. Anthropometry shows normal BMI and height-for-age. Cardiovascular indices (BP 92/55 mmHg, pulse 89 bpm) are well within healthy pediatric limits. Metabolic and lipid profiles (glucose 4.8 mmol/L, insulin 6.5 mU/L, normal lipid panel, low TG/HDL ratio) reflect optimal metabolic youth. Inflammatory marker (hs-CRP 0.5 mg/L), hepatic enzymes (ALT 23, AST 30, GGT 12), and renal function (creatinine 37 umol/L) are completely unremarkable and align with ideal developmental maturation. Sleep metrics demonstrate sufficient overall sleep with minor behavioral bedtime resistance. Consequently, biological age closely aligns with or marginally leads chronological age, reflecting optimal development without accelerated aging.",
+    "key indicators": "overall biological age: BMI, hs-CRP, glucose, BP#cardiovascular age: SBP, DBP, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: CSHQ sleep disordered breathing, normal growth#renal age: Creatinine#metabolic system age: Fasting glucose, fasting insulin, TG/HDL ratio#musculoskeletal age: Height-for-age, weight, BMI",
+    "overall biological age": 10,
+    "cardiovascular age": 10,
+    "hepatic age": 10,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 10,
+    "musculoskeletal age": 10
+}
+{
+    "inference process": "The subject is a 10.34-year-old male with obesity (BMI 24.4 kg/m^2). Significant elevated systolic blood pressure (130 mmHg) and high resting pulse (129 bpm) indicate accelerated cardiovascular stress/aging. Fasting insulin is moderately high (17.8 mU/L) reflecting early insulin resistance linked to obesity, while lipid panel shows borderline HDL. Liver enzymes (ALT, AST, GGT) and renal function (creatinine) are currently within healthy pediatric limits, keeping hepatic and renal ages aligned near chronological age. Overall biological age and metabolic age are moderately advanced due to obesity, cardiometabolic strain, and elevated blood pressure.",
+    "key indicators": "overall biological age: BMI, elevated systolic blood pressure, fasting insulin#cardiovascular age: systolic blood pressure (130 mmHg), pulse (129 bpm), borderline HDL#hepatic age: ALT (20 U/L), AST (24 U/L), GGT (16 U/L)#pulmonary age: CSHQ sleep disordered breathing, normal height-for-age#renal age: Creatinine (41 umol/L)#metabolic system age: BMI (obesity), fasting insulin (17.8 mU/L), HDL cholesterol (1.1 mmol/L)#musculoskeletal age: Height-for-age, BMI-for-age",
+    "overall biological age": 12,
+    "cardiovascular age": 13,
+    "hepatic age": 10,
+    "pulmonary age": 11,
+    "renal age": 10,
+    "metabolic system age": 12,
+    "musculoskeletal age": 11
+}
+{
+    "inference process": "The individual is a 10.1-year-old male with normal anthropometric parameters (BMI 17.81 kg/m^2, normal height and weight). Blood pressure (100/56 mmHg) and resting pulse (67 bpm) are optimal, indicating appropriate cardiovascular maturation and health. Lipid profile shows acceptable total cholesterol, triglycerides, and LDL, though HDL is borderline; fasting glucose is normal, although insulin (16.4 mU/L) is mildly high-normal for age, reflecting mild early pubertal metabolic shifts. Hepatic markers (ALT, AST, GGT) and renal function (creatinine 39 umol/L) are fully normal and aligned with chronological age. Sleep architecture shows adequate duration. Overall, physiological and organ-specific parameters align closely with chronological development.",
+    "key indicators": "overall biological age: chronological age, BMI, blood pressure, fasting glucose#cardiovascular age: blood pressure, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: absence of sleep-disordered breathing, healthy weight#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides, HDL#musculoskeletal age: height-for-age, weight-for-age, BMI",
+    "overall biological age": 10,
+    "cardiovascular age": 10,
+    "hepatic age": 10,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 10,
+    "musculoskeletal age": 10
+}
+{
+    "inference process": "The subject is a 10.17-year-old girl with normal BMI and height-for-age. Her cardiovascular indicators (BP 94/59 mmHg, resting pulse 77 bpm) are healthy and youthful for her chronological age. Metabolic markers show normal fasting glucose and acceptable total/LDL cholesterol, though HDL is slightly low and triglycerides borderline, keeping metabolic age consistent with chronological age. Hepatic transaminases (ALT, AST, GGT) and renal function (serum creatinine 37 umol/L) are fully normal and optimal for a 10-year-old. Sleep duration is adequate (9-9.5 hours). Overall, the biological age matches the chronological age closely across major organ systems.",
+    "key indicators": "overall biological age: BMI, healthy blood pressure, normal hepatic and renal function#cardiovascular age: SBP 94 mmHg, DBP 59 mmHg, resting pulse 77 bpm#hepatic age: ALT 18 U/L, AST 28 U/L, GGT 10 U/L#pulmonary age: sleep-disordered breathing score, normal BMI#renal age: serum creatinine 37 umol/L#metabolic system age: fasting glucose 4.9 mmol/L, fasting insulin 11 mU/L, lipid ratios#musculoskeletal age: normal height and weight percentiles",
+    "overall biological age": 10,
+    "cardiovascular age": 10,
+    "hepatic age": 10,
+    "pulmonary age": 10,
+    "renal age": 10,
+    "metabolic system age": 10,
+    "musculoskeletal age": 10
+}

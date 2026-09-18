@@ -1,6 +1,6 @@
 {
-    "inference process": "The subject is a 7.88-year-old boy with normal weight, height, and blood pressure. Most metabolic and organ function markers are within normal pediatric ranges, though total cholesterol is slightly high, suggesting minor dietary or genetic lipid variations. Overall, physiological markers indicate normal growth and development closely aligned with chronological age.",
-    "key indicators": "overall biological age: BMI, blood pressure, lipid profile#cardiovascular age: blood pressure, pulse, HDL/LDL#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, sleep duration#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides#musculoskeletal age: height, weight, BMI",
+    "inference process": "The subject is a 7.88-year-old boy with normal weight, height, and blood pressure. Most metabolic and organ function markers are within normal pediatric ranges, though total cholesterol is slightly high. Overall, his biological aging markers closely align with his chronological age, showing a healthy physiological state across all organ systems.",
+    "key indicators": "overall biological age: BMI, blood pressure, lipid profile#cardiovascular age: blood pressure, pulse, HDL/LDL cholesterol#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, sleep duration#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides#musculoskeletal age: BMI, height, weight",
     "overall biological age": 8,
     "cardiovascular age": 8,
     "hepatic age": 8,
@@ -10,8 +10,8 @@
     "musculoskeletal age": 8
 }
 {
-    "inference process": "The subject is an 8-year-old girl with normal growth metrics (height, weight, BMI), normal blood pressure, healthy lipid and glycemic profiles, low inflammation, and normal hepatic and renal markers. All physiological indicators align closely with her chronological age, suggesting a normal and healthy biological aging process across all systems.",
-    "key indicators": "overall biological age: normal BMI, normal blood pressure, normal labs#cardiovascular age: normal blood pressure, pulse, lipid profile#hepatic age: normal ALT, AST, GGT#pulmonary age: normal sleep disordered breathing, normal vitals#renal age: normal creatinine#metabolic system age: normal fasting glucose, insulin, triglycerides, HDL, LDL#musculoskeletal age: normal BMI, normal height and weight",
+    "inference process": "The subject is an 8-year-old girl with normal growth metrics (height, weight, BMI), normal blood pressure, good metabolic, lipid, hepatic, and renal function markers, and low inflammation. All physiological indicators are within healthy pediatric ranges, suggesting normal and healthy development aligned with her chronological age.",
+    "key indicators": "overall biological age: BMI, blood pressure, lipid profile, glucose, liver and kidney function#cardiovascular age: blood pressure, pulse, lipid markers#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, vital signs#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, lipids, BMI#musculoskeletal age: BMI, height, weight",
     "overall biological age": 8,
     "cardiovascular age": 8,
     "hepatic age": 8,
@@ -21,52 +21,19 @@
     "musculoskeletal age": 8
 }
 {
-    "inference process": "The subject is a 7.77-year-old boy presenting with childhood obesity (BMI 22.33 kg/m^2) and elevated hs-CRP, indicating intermediate inflammation, along with elevated ALT suggesting mild hepatic stress. Cardiovascular, lipid, glucose, and renal markers are generally within normal pediatric limits. The overall biological age is slightly accelerated due to obesity and hepatic markers, while specific organ systems reflect these mixed indicators.",
-    "key indicators": "overall biological age: BMI, hs-CRP, ALT#cardiovascular age: blood pressure, pulse, lipid markers#hepatic age: ALT, AST#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: BMI, fasting glucose, fasting insulin#musculoskeletal age: BMI, height, weight",
+    "inference process": "The subject is a 7.77-year-old boy presenting with obesity (BMI 22.33), elevated hs-CRP indicating intermediate inflammation, and slightly elevated ALT suggesting mild hepatic stress. Cardiovascular, lipid, and renal markers are mostly within normal ranges. Overall, obesity and mild inflammation push the biological age slightly above chronological age, particularly impacting metabolic and hepatic systems.",
+    "key indicators": "overall biological age: BMI, hs-CRP, ALT#cardiovascular age: blood pressure, pulse, lipid markers#hepatic age: ALT, AST#pulmonary age: height#renal age: creatinine#metabolic system age: BMI, fasting insulin, glucose#musculoskeletal age: BMI, height",
     "overall biological age": 9,
     "cardiovascular age": 8,
-    "hepatic age": 9,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 9,
-    "musculoskeletal age": 8
-}
-{
-    "inference process": "The subject is a 7.85-year-old boy with normal height and weight, displaying generally healthy vital signs, normal organ function markers (hepatic, renal), and acceptable lipid and glucose levels, though triglycerides are slightly high. Overall, his biological age aligns closely with his chronological age.",
-    "key indicators": "overall biological age: BMI, blood pressure, lipid profile#cardiovascular age: blood pressure, heart rate#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: fasting glucose, triglycerides#musculoskeletal age: BMI, height, weight",
-    "overall biological age": 8,
-    "cardiovascular age": 8,
-    "hepatic age": 8,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 8,
-    "musculoskeletal age": 8
-}
-{
-    "inference process": "The subject is a 7.92-year-old girl with normal growth parameters and blood pressure. However, she exhibits high LDL cholesterol, total cholesterol, and elevated hs-CRP indicating systemic inflammation, which slightly accelerates her cardiovascular and metabolic aging. Hepatic, renal, pulmonary, and musculoskeletal markers remain within healthy pediatric ranges, keeping those organ ages close to her chronological age.",
-    "key indicators": "overall biological age: hs-CRP, LDL cholesterol, total cholesterol#cardiovascular age: LDL cholesterol, blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: normal development#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides#musculoskeletal age: BMI, height, weight",
-    "overall biological age": 8,
-    "cardiovascular age": 9,
-    "hepatic age": 8,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 8,
-    "musculoskeletal age": 8
-}
-{
-    "inference process": "The subject is an 8-year-old girl presenting with obesity, high BMI-for-age, high LDL cholesterol, total cholesterol, and triglycerides, indicating early signs of metabolic stress despite normal blood pressure and liver/renal function. Her overall biological age and metabolic age are slightly advanced due to pediatric obesity and dyslipidemia, while other organ systems remain relatively age-appropriate.",
-    "key indicators": "overall biological age: BMI, triglycerides, LDL cholesterol#cardiovascular age: blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: fasting insulin, fasting glucose, triglycerides, HDL#musculoskeletal age: BMI, height, weight",
-    "overall biological age": 9,
-    "cardiovascular age": 8,
-    "hepatic age": 8,
+    "hepatic age": 10,
     "pulmonary age": 8,
     "renal age": 8,
     "metabolic system age": 10,
     "musculoskeletal age": 9
 }
 {
-    "inference process": "The subject is a 7.91-year-old boy with normal weight, height, and blood pressure. All metabolic, lipid, inflammatory, hepatic, and renal markers are within healthy pediatric ranges. Therefore, all organ systems and overall biological age align closely with his chronological age.",
-    "key indicators": "overall biological age: BMI, blood pressure, lipid profile, metabolic markers#cardiovascular age: blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: normal growth, sleep markers#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, lipid markers#musculoskeletal age: BMI, height, weight",
+    "inference process": "The subject is a 7.85-year-old boy with normal weight, height, and blood pressure. Most metabolic, hepatic, and renal markers are within normal limits, though triglycerides are slightly high and total cholesterol is borderline. Overall health indicators reflect normal growth and development, aligning his biological ages closely with his chronological age.",
+    "key indicators": "overall biological age: BMI, blood pressure, lipid profile#cardiovascular age: blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: fasting glucose, triglycerides, total cholesterol#musculoskeletal age: BMI, height, weight",
     "overall biological age": 8,
     "cardiovascular age": 8,
     "hepatic age": 8,
@@ -76,65 +43,10 @@
     "musculoskeletal age": 8
 }
 {
-    "inference process": "The subject is a 7.84-year-old girl who is slightly overweight for her age (BMI 18.55 kg/m^2) with intermediate hs-CRP inflammation, but otherwise normal cardiovascular, metabolic, hepatic, renal, and pulmonary markers. Her biological ages are generally aligned with her chronological age, showing minor variations due to her BMI and inflammatory markers.",
-    "key indicators": "BMI, hs-CRP#blood pressure, pulse, lipid profile#ALT, AST, GGT#spirometry or pulmonary status (normal height)#creatinine#fasting glucose, fasting insulin, lipids#BMI, physical stature",
-    "overall biological age": 8,
-    "cardiovascular age": 8,
-    "hepatic age": 8,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 8,
-    "musculoskeletal age": 8
-}
-{
-    "inference process": "The subject is an 8-year-old girl with normal BMI, height, and weight for her age. Her cardiovascular markers, including blood pressure and pulse, are within normal pediatric ranges. Glucose, lipid, hepatic, and renal markers show no signs of dysfunction or disease, indicating healthy organ function aligned with her chronological age. Inflammation markers (hs-CRP) are low, and sleep patterns are normal. Overall, all physiological indicators suggest normal growth and development matching her chronological age of 8 years.",
-    "key indicators": "overall biological age: BMI, blood pressure, glucose, lipids, liver and kidney function#cardiovascular age: blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: BMI, fasting glucose, triglycerides#musculoskeletal age: BMI, height, weight",
-    "overall biological age": 8,
-    "cardiovascular age": 8,
-    "hepatic age": 8,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 8,
-    "musculoskeletal age": 8
-}
-{
-    "inference process": "The subject is a child of chronological age 7.95 years with obesity (BMI 21.4 kg/m^2) and intermediate hs-CRP, suggesting mild systemic inflammation and accelerated metabolic aging. Cardiovascular, hepatic, and renal markers are mostly within normal ranges, indicating age-appropriate organ function despite the obesity.",
-    "key indicators": "overall biological age: BMI, hs-CRP#cardiovascular age: blood pressure, lipids#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, sleep duration#renal age: creatinine#metabolic system age: BMI, fasting insulin, fasting glucose#musculoskeletal age: BMI, height, weight",
+    "inference process": "The subject is a nearly 8-year-old girl with normal height and weight, but exhibits high total and LDL cholesterol along with elevated hs-CRP indicating systemic inflammation. Most organ systems like hepatic, renal, and pulmonary functions appear age-appropriate, but lipid profile and inflammatory markers suggest a slightly accelerated cardiovascular and metabolic aging trajectory.",
+    "key indicators": "overall biological age: hs-CRP, LDL cholesterol#cardiovascular age: LDL cholesterol, blood pressure#hepatic age: ALT, AST, GGT#pulmonary age: chronological age#renal age: creatinine#metabolic system age: fasting glucose, total cholesterol#musculoskeletal age: BMI, height, weight",
     "overall biological age": 9,
-    "cardiovascular age": 8,
-    "hepatic age": 8,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 10,
-    "musculoskeletal age": 9
-}
-{
-    "inference process": "The subject is a 7.99-year-old girl with normal height, weight, and BMI. Her cardiovascular, hepatic, renal, and metabolic markers are generally within normal or acceptable ranges, indicating a healthy developmental state aligned with her chronological age. Minor variations such as borderline lipids and intermediate hs-CRP are insufficient to indicate accelerated biological aging, leading to predicted biological ages closely matching her chronological age across all systems.",
-    "key indicators": "overall biological age: BMI, blood pressure, fasting glucose#cardiovascular age: blood pressure, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, sleep duration#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides#musculoskeletal age: BMI, height, weight",
-    "overall biological age": 8,
-    "cardiovascular age": 8,
-    "hepatic age": 8,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 8,
-    "musculoskeletal age": 8
-}
-{
-    "inference process": "The subject is an 8.32-year-old girl with normal vital signs, normal organ function markers (hepatic, renal), and stable glucose levels. However, she is classified as overweight based on her BMI, and shows borderline lipid levels (HDL, LDL, total cholesterol) and mild sleep disturbances, which slightly elevate her metabolic and cardiovascular age estimates compared to her chronological age.",
-    "key indicators": "overall biological age: BMI, lipid profile#cardiovascular age: blood pressure, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: blood pressure, sleep metrics#renal age: creatinine#metabolic system age: BMI, fasting insulin, lipids#musculoskeletal age: BMI, height, weight",
-    "overall biological age": 9,
-    "cardiovascular age": 9,
-    "hepatic age": 8,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 10,
-    "musculoskeletal age": 9
-}
-{
-    "inference process": "The subject is an 8.33-year-old girl with normal height and weight, normal blood pressure, good metabolic and hepatic markers, but a slightly high total cholesterol level. Overall, her biological age aligns closely with her chronological age, showing minor variations in specific organ systems due to standard pediatric lab variations like borderline total cholesterol.",
-    "key indicators": "overall biological age: BMI, total cholesterol#cardiovascular age: blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, lipids#musculoskeletal age: BMI, height, weight",
-    "overall biological age": 8,
-    "cardiovascular age": 8,
+    "cardiovascular age": 10,
     "hepatic age": 8,
     "pulmonary age": 8,
     "renal age": 8,
@@ -142,54 +54,10 @@
     "musculoskeletal age": 8
 }
 {
-    "inference process": "The subject is an 8-year-old girl presenting with obesity (BMI 23 kg/m^2), high LDL and total cholesterol, and elevated hs-CRP indicating systemic inflammation. These metabolic and inflammatory markers suggest accelerated biological aging, particularly affecting the metabolic system, cardiovascular system, and overall biological age, while hepatic, renal, pulmonary, and musculoskeletal systems show fewer signs of accelerated aging due to normal organ-specific function markers.",
-    "key indicators": "overall biological age: BMI, hs-CRP, LDL cholesterol#cardiovascular age: blood pressure, LDL cholesterol, total cholesterol#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: BMI, fasting insulin, triglycerides, HDL#musculoskeletal age: height, weight",
-    "overall biological age": 11,
-    "cardiovascular age": 10,
-    "hepatic age": 8,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 12,
-    "musculoskeletal age": 8
-}
-{
-    "inference process": "The subject is an 8.03-year-old girl with normal height, weight, and BMI. Most markers are within normal pediatric ranges, including blood pressure, glucose, liver function, and renal function. However, she exhibits high total cholesterol and high LDL cholesterol, which suggests a slightly accelerated cardiovascular aging risk despite her young age. Other systems appear well-aligned with her chronological age.",
-    "key indicators": "overall biological age: normal BMI, high LDL cholesterol#cardiovascular age: high total cholesterol, high LDL cholesterol#hepatic age: normal ALT, AST, GGT#pulmonary age: normal blood pressure and vital signs#renal age: normal creatinine#metabolic system age: normal fasting glucose and insulin#musculoskeletal age: normal height and weight",
-    "overall biological age": 8,
-    "cardiovascular age": 10,
-    "hepatic age": 8,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 8,
-    "musculoskeletal age": 8
-}
-{
-    "inference process": "The subject is an 8.44-year-old boy with normal height and weight, normal blood pressure, good metabolic and hepatic markers, and normal renal function. The low HDL cholesterol is a minor negative indicator, but overall health parameters are within normal pediatric ranges, suggesting an overall biological age closely aligned with his chronological age.",
-    "key indicators": "overall biological age: BMI, blood pressure, lipid profile#cardiovascular age: blood pressure, heart rate#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, sleep duration#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides#musculoskeletal age: height, weight, BMI",
-    "overall biological age": 8,
-    "cardiovascular age": 8,
-    "hepatic age": 8,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 8,
-    "musculoskeletal age": 8
-}
-{
-    "inference process": "The subject is an 8-year-old boy with normal growth parameters (height and weight for age), healthy cardiovascular markers (normal blood pressure and pulse), excellent metabolic and lipid profiles, low inflammation, normal hepatic and renal function, and adequate sleep patterns. All clinical and biochemical indicators fall well within normal, healthy pediatric ranges, suggesting a biological age closely aligned with his chronological age across all systems.",
-    "key indicators": "overall biological age: BMI, blood pressure, lipid profile, glucose, liver and kidney function#cardiovascular age: blood pressure, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, normal physical status#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, BMI, triglycerides#musculoskeletal age: height, weight, BMI status",
-    "overall biological age": 8,
-    "cardiovascular age": 8,
-    "hepatic age": 8,
-    "pulmonary age": 8,
-    "renal age": 8,
-    "metabolic system age": 8,
-    "musculoskeletal age": 8
-}
-{
-    "inference process": "The subject is a 7.89-year-old boy presenting with pediatric obesity (BMI 23.68 kg/m^2), borderline blood pressure (systolic 120 mmHg), low HDL cholesterol, borderline total and LDL cholesterol, and high triglycerides. These metabolic and cardiovascular risk factors suggest accelerated biological aging, particularly in metabolic and cardiovascular systems. Hepatic, renal, pulmonary, and musculoskeletal markers are generally within normal ranges for age, though systemic effects of obesity are present.",
-    "key indicators": "overall biological age: BMI, lipids, blood pressure#cardiovascular age: blood pressure, lipids#hepatic age: ALT, AST, GGT#pulmonary age: age, normal status#renal age: creatinine#metabolic system age: BMI, triglycerides, HDL, fasting insulin#musculoskeletal age: height, weight, age",
+    "inference process": "The subject is an 8-year-old girl presenting with obesity, high LDL cholesterol, high total cholesterol, high triglycerides, and elevated fasting insulin, indicating early metabolic strain and cardiovascular risk despite normal blood pressure and liver/renal function. Consequently, her metabolic and cardiovascular system ages are estimated to be slightly advanced compared to her chronological age, while hepatic, renal, pulmonary, and musculoskeletal ages remain largely close to normal.",
+    "key indicators": "overall biological age: BMI, LDL cholesterol, triglycerides, fasting insulin#cardiovascular age: blood pressure, LDL cholesterol, triglycerides#hepatic age: ALT, AST, GGT#pulmonary age: age, height#renal age: creatinine#metabolic system age: BMI, fasting glucose, fasting insulin, triglycerides#musculoskeletal age: height, weight, BMI",
     "overall biological age": 10,
-    "cardiovascular age": 9,
+    "cardiovascular age": 10,
     "hepatic age": 8,
     "pulmonary age": 8,
     "renal age": 8,
@@ -197,19 +65,151 @@
     "musculoskeletal age": 9
 }
 {
-    "inference process": "The subject is a 7.82-year-old boy with normal weight and height, healthy cardiovascular, hepatic, renal, and metabolic markers, alongside good sleep patterns. All major clinical indicators are well within normal pediatric ranges, suggesting a biological age closely aligned with or slightly younger than his chronological age across all organ systems.",
-    "key indicators": "overall biological age: BMI, blood pressure, lipid profile, liver and renal function#cardiovascular age: blood pressure, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, normal development#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, BMI#musculoskeletal age: height-for-age, BMI-for-age",
-    "overall biological age": 7,
-    "cardiovascular age": 7,
-    "hepatic age": 7,
-    "pulmonary age": 7,
-    "renal age": 7,
-    "metabolic system age": 7,
-    "musculoskeletal age": 7
+    "inference process": "The subject is a 7.91-year-old boy with normal weight, height, blood pressure, lipid profile, glucose levels, and liver/renal function markers, indicating a healthy physiological state aligned with his chronological age across all evaluated systems.",
+    "key indicators": "overall biological age: BMI, blood pressure, lipid profile, glucose, liver and renal markers#cardiovascular age: blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, lipids#musculoskeletal age: BMI, height, weight",
+    "overall biological age": 8,
+    "cardiovascular age": 8,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 8,
+    "musculoskeletal age": 8
 }
 {
-    "inference process": "The subject is a 7.75-year-old girl with normal height and weight, standard blood pressure, and normal metabolic markers. Most laboratory values fall within healthy pediatric ranges, although ALT is slightly elevated and HDL/triglycerides are borderline. Overall, her biological age aligns closely with her chronological age, showing normal development across organ systems.",
-    "key indicators": "overall biological age: BMI, blood pressure, fasting glucose#cardiovascular age: blood pressure, pulse, lipid markers#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, sleep duration#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, lipids#musculoskeletal age: BMI, height, weight",
+    "inference process": "The subject is a 7.84-year-old girl who is slightly overweight for her age (BMI 18.55 kg/m^2) with intermediate hs-CRP indicating mild systemic inflammation, but otherwise shows normal cardiovascular, metabolic, hepatic, renal, and pulmonary markers. Her overall biological age aligns closely with her chronological age, with slight variations across specific organ systems due to her BMI and inflammatory markers.",
+    "key indicators": "overall biological age: BMI, hs-CRP#cardiovascular age: blood pressure, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, night sleep#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides, HDL#musculoskeletal age: height, weight, BMI",
+    "overall biological age": 8,
+    "cardiovascular age": 8,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 8,
+    "musculoskeletal age": 8
+}
+{
+    "inference process": "The subject is an 8-year-old girl with normal BMI, height, and weight for her age. Her cardiovascular markers, including blood pressure and pulse, are within normal pediatric ranges. Glucose, insulin, lipid markers, inflammation (hs-CRP), hepatic markers (ALT, AST, GGT), and renal markers (creatinine) are all generally healthy or within acceptable limits. Sleep patterns are also normal. Overall, her physiological indicators reflect a healthy developmental state aligned with her chronological age, suggesting her biological age and organ-specific ages closely match her 8-year chronological age.",
+    "key indicators": "overall biological age: BMI, blood pressure, glucose, lipids, liver and kidney function#cardiovascular age: blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, normal development#renal age: creatinine#metabolic system age: BMI, fasting glucose, fasting insulin, lipids#musculoskeletal age: BMI, height, weight",
+    "overall biological age": 8,
+    "cardiovascular age": 8,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 8,
+    "musculoskeletal age": 8
+}
+{
+    "inference process": "The subject is a child of chronological age 7.95 years with obesity (BMI 21.4 kg/m^2) and intermediate hs-CRP, suggesting mild systemic inflammation due to adiposity. Other metabolic, lipid, hepatic, renal, and cardiovascular parameters are largely within normal ranges for age. Therefore, overall biological age and specific organ systems are slightly influenced by the obesity and inflammation, pulling some system ages slightly higher than chronological age.",
+    "key indicators": "overall biological age: BMI, hs-CRP#cardiovascular age: blood pressure, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, CSHQ#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, BMI#musculoskeletal age: BMI, height, weight",
+    "overall biological age": 9,
+    "cardiovascular age": 8,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 9,
+    "musculoskeletal age": 9
+}
+{
+    "inference process": "The subject is a 7.99-year-old girl with normal height, weight, and BMI. Her cardiovascular, hepatic, renal, and metabolic markers are generally within normal or acceptable pediatric ranges, though with borderline lipid and slightly elevated hs-CRP indicating mild inflammation. Overall, her biological ages align closely with her chronological age, showing a healthy pediatric physiological profile.",
+    "key indicators": "BMI, blood pressure, lipid profile#blood pressure, pulse#ALT, AST, GGT#spirometry, sleep duration#creatinine#glucose, insulin, lipids#BMI, physical development",
+    "overall biological age": 8,
+    "cardiovascular age": 8,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 8,
+    "musculoskeletal age": 8
+}
+{
+    "inference process": "The subject is an 8.32-year-old girl who is slightly overweight (BMI 17.98 kg/m^2) with borderline lipid levels (HDL, LDL, total cholesterol) and normal blood pressure, glucose, liver, and renal markers. Her physiological markers generally align with her chronological age, though mild overweight status slightly elevates metabolic and cardiovascular aging markers.",
+    "key indicators": "overall biological age: BMI, lipid profile#cardiovascular age: blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, BMI#musculoskeletal age: height, weight, BMI",
+    "overall biological age": 8,
+    "cardiovascular age": 8,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 9,
+    "musculoskeletal age": 8
+}
+{
+    "inference process": "The subject is an 8.33-year-old girl with mostly normal growth and development indicators. Her BMI, blood pressure, fasting glucose, insulin, liver and renal markers are within healthy ranges. However, she exhibits slightly elevated total cholesterol and borderline LDL cholesterol, which may suggest minor early metabolic/cardiovascular considerations, though overall she presents a typical healthy profile matching her chronological age.",
+    "key indicators": "overall biological age: BMI, blood pressure, cholesterol#cardiovascular age: blood pressure, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: none#renal age: creatinine#metabolic system age: fasting glucose, insulin, triglycerides, total cholesterol#musculoskeletal age: BMI, height, weight",
+    "overall biological age": 8,
+    "cardiovascular age": 8,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 9,
+    "musculoskeletal age": 8
+}
+{
+    "inference process": "The subject is an 8.04-year-old girl presenting with obesity (BMI 23), high LDL cholesterol, high total cholesterol, and elevated hs-CRP indicating systemic inflammation. These metabolic and inflammatory markers suggest accelerated biological aging, particularly affecting the metabolic system, cardiovascular system, and overall biological age, while hepatic, renal, pulmonary, and musculoskeletal markers remain relatively normal for her age.",
+    "key indicators": "overall biological age: BMI, hs-CRP, LDL cholesterol#cardiovascular age: blood pressure, LDL cholesterol, total cholesterol#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: BMI, fasting insulin, fasting glucose, triglycerides#musculoskeletal age: height, weight",
+    "overall biological age": 10,
+    "cardiovascular age": 9,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 11,
+    "musculoskeletal age": 8
+}
+{
+    "inference process": "The subject is an 8.03-year-old girl with normal height, weight, and BMI. Most markers are within normal pediatric ranges, including blood pressure, glucose, liver function, and renal function. However, she exhibits high total cholesterol and high LDL cholesterol, which slightly elevates her cardiovascular and metabolic age relative to her chronological age. Other organ systems appear to be developing normally and align closely with her chronological age.",
+    "key indicators": "overall biological age: BMI, total cholesterol, LDL cholesterol#cardiovascular age: blood pressure, total cholesterol, LDL cholesterol#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, normal physical status#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, lipids#musculoskeletal age: BMI, height, weight",
+    "overall biological age": 8,
+    "cardiovascular age": 9,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 9,
+    "musculoskeletal age": 8
+}
+{
+    "inference process": "The subject is an 8.44-year-old boy with normal weight, height, and blood pressure. Most metabolic, hepatic, and renal markers are within normal pediatric ranges, though HDL cholesterol is slightly low. Overall, his physiological parameters align well with his chronological age, indicating normal development and biological aging across all systems.",
+    "key indicators": "overall biological age: BMI, blood pressure, normal growth metrics#cardiovascular age: blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, sleep duration#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, lipid profile#musculoskeletal age: height, weight, BMI",
+    "overall biological age": 8,
+    "cardiovascular age": 8,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 8,
+    "musculoskeletal age": 8
+}
+{
+    "inference process": "The subject is an 8.14-year-old boy with normal height, weight, and BMI. All cardiovascular, metabolic, hepatic, and renal markers are within normal, healthy pediatric ranges, indicating a biological age closely aligned with his chronological age across all systems.",
+    "key indicators": "overall biological age: BMI, blood pressure, lipid profile#cardiovascular age: blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, lipids#musculoskeletal age: BMI, height, weight",
+    "overall biological age": 8,
+    "cardiovascular age": 8,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 8,
+    "musculoskeletal age": 8
+}
+{
+    "inference process": "The subject is a 7.89-year-old boy presenting with obesity (BMI 23.68 kg/m^2), borderline blood pressure, low HDL, borderline LDL and total cholesterol, and high triglycerides, indicating early metabolic and cardiovascular strain. Hepatic, renal, and pulmonary markers are largely within normal ranges for his age. Musculoskeletal indicators reflect normal height but accelerated weight gain. Overall, metabolic and cardiovascular systems show signs of premature aging due to childhood obesity.",
+    "key indicators": "overall biological age: BMI, triglycerides, HDL cholesterol#cardiovascular age: blood pressure, triglycerides, HDL cholesterol#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing#renal age: creatinine#metabolic system age: BMI, fasting insulin, triglycerides, HDL cholesterol#musculoskeletal age: BMI, height, weight",
+    "overall biological age": 10,
+    "cardiovascular age": 10,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 11,
+    "musculoskeletal age": 9
+}
+{
+    "inference process": "The subject is a 7.82-year-old boy with normal weight, height, and blood pressure. Most metabolic, hepatic, renal, and lipid markers are within normal or acceptable ranges, with only borderline LDL and total cholesterol. Overall, the physiological indicators match his chronological age, suggesting normal development and aging across all systems.",
+    "key indicators": "overall biological age: BMI, blood pressure, lipid profile#cardiovascular age: blood pressure, pulse#hepatic age: ALT, AST, GGT#pulmonary age: sleep duration, sleep disordered breathing#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, triglycerides#musculoskeletal age: BMI, height, weight",
+    "overall biological age": 8,
+    "cardiovascular age": 8,
+    "hepatic age": 8,
+    "pulmonary age": 8,
+    "renal age": 8,
+    "metabolic system age": 8,
+    "musculoskeletal age": 8
+}
+{
+    "inference process": "The subject is a 7.75-year-old girl with normal growth parameters (BMI and height-for-age are normal), normal cardiovascular markers, normal glucose and insulin levels, acceptable lipid profile despite borderline HDL and triglycerides, slightly elevated ALT for pediatric norms, normal renal function (creatinine), and typical sleep patterns. Overall, her physiological indicators closely align with her chronological age, suggesting normal biological aging across all systems.",
+    "key indicators": "overall biological age: BMI, growth parameters, blood pressure, metabolic markers#cardiovascular age: blood pressure, pulse, lipid profile#hepatic age: ALT, AST, GGT#pulmonary age: sleep disordered breathing, sleep duration#renal age: creatinine#metabolic system age: fasting glucose, fasting insulin, lipids#musculoskeletal age: height, weight, BMI",
     "overall biological age": 8,
     "cardiovascular age": 8,
     "hepatic age": 8,

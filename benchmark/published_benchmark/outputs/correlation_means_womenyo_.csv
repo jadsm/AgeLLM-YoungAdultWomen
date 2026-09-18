@@ -1,0 +1,6 @@
+model,cardiovascular_age,chronological_age,hepatic_age,metabolic_system_age,musculoskeletal_age,overall_biological_age,pulmonary_age,renal_age
+Gemini Pro,0.92,1.0,0.93,0.91,0.96,0.94,0.98,0.97
+minimax,0.86,1.0,0.81,0.76,0.93,0.86,0.95,0.94
+Gemini Flash,0.92,1.0,0.93,0.9,0.97,0.95,0.97,0.97
+Gemini Flash Lite,0.92,1.0,0.92,0.91,0.97,0.95,0.98,0.97
+Claude Sonnet,0.89,1.0,0.9,0.89,0.96,0.93,0.98,0.96

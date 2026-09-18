@@ -2,6 +2,7 @@
 import os
 from model_utils import generate_claude_sonnet, generate_gemini, generate_openai
 import json
+import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 with open("/Users/jdelgad1/Desktop/Juan/code/.creds/vertex_api.txt", "r") as f:
@@ -27,13 +28,20 @@ def generate(content,model, si_text1, seed=None)-> str:
 if __name__ == "__main__":
   # paths = {"women_pre_natal":os.path.join(HERE, "data/source_data/women_before_pregnancy.jsonl"),
   #          "women_post_natal":os.path.join(HERE, "data/source_data/women_after_pregnancy.jsonl")}
-  paths = {"8yo":os.path.join(HERE, "data/source_data/gusto_y8_selected20.jsonl"),
+  paths = {
+            "8yo":os.path.join(HERE, "data/source_data/gusto_y8_selected20.jsonl"),
              "10yo":os.path.join(HERE, "data/source_data/gusto_y10_selected20.jsonl"),
-             "12yo":os.path.join(HERE, "data/source_data/gusto_y12_selected20.jsonl")}
+             "12yo":os.path.join(HERE, "data/source_data/gusto_y12_selected20.jsonl")
+             }
 
-  prompts = [os.path.join(HERE, 'system_instructions/system_instructions.txt'),
-              os.path.join(HERE, 'system_instructions/system_instructions_simple.txt'),
-              os.path.join(HERE, 'system_instructions/system_instructions_supersimple.txt')]
+  # prompts = [os.path.join(HERE, 'system_instructions/system_instructions.txt'),
+  #             os.path.join(HERE, 'system_instructions/system_instructions_simple.txt'),
+  #             os.path.join(HERE, 'system_instructions/system_instructions_supersimple.txt')]
+
+  prompts = [os.path.join(HERE, 'system_instructions/system_instructions.txt')]
+  # "gemini-3.1-pro-preview","gemini-3.8-flash","gemini-3.5-flash-lite","claude-sonnet-5",
+  models = ["minimax-m2-maas"]#"qwen3-235b-a22b-instruct-2507-maas","gpt-oss-120b-maas",
+  
   # repeats = 5
   # for k in [0]:#range(repeats):
   for k,prompt in enumerate(prompts):
@@ -45,9 +53,6 @@ if __name__ == "__main__":
       # load system instruction from file
       with open(prompt, "r") as f:
         si_text1 = f.read()
-
-      models = ["gemini-3.1-pro-preview","gemini-3.8-flash","gemini-3.5-flash-lite","claude-sonnet-5","qwen3.8-27b-fp8","gpt-oss@gpt-oss-20b","minimax-m2-maas"]
-      # models = ["llama-3.3-70b-instruct-maas"]
       
       for model in models:
         # responses = [generate(content, model, seed=k) for content in content_strings]
@@ -57,3 +62,5 @@ if __name__ == "__main__":
           for response in responses:
             f.write(response + "\n")
         print(f'Finished generating! {name}_{model}_prompt{k}')
+        # wait 10 seconds to give some space to the API and not exhaust them
+        time.sleep(10)
