@@ -39,7 +39,7 @@ if __name__ == "__main__":
   #             os.path.join(HERE, 'system_instructions/system_instructions_supersimple.txt')]
 
   prompts = [os.path.join(HERE, 'system_instructions/system_instructions.txt')]
-  # "gemini-3.1-pro-preview","gemini-3.8-flash","gemini-3.5-flash-lite","claude-sonnet-5",
+  # "gemini-3.1-pro-preview","gemini-3.8-flash","gemini-3.5-flash-lite","claude-sonnet-5","minimax-m2-maas"
   models = ["minimax-m2-maas"]#"qwen3-235b-a22b-instruct-2507-maas","gpt-oss-120b-maas",
   
   # repeats = 5

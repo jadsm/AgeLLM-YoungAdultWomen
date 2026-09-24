@@ -6,6 +6,7 @@ import numpy as np
 import re
 import seaborn as sns
 import matplotlib.pyplot as plt
+import altair as alt
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTPUTS = os.path.join(HERE, "outputs")
@@ -52,6 +53,7 @@ a = []
 # filter_conditions = "seed[0-4]"
 # filter_conditions = "prompt[0-2]"
 filter_conditions = "yo_"
+children_cohort = True
 exclusion_filters = ""
 for model_path in os.listdir(OUTPUTS):
     if not model_path.endswith(".txt") or not re.search(rf"{filter_conditions}", model_path) or (len(exclusion_filters)>0 and re.search(rf"{exclusion_filters}", model_path)):
@@ -157,6 +159,40 @@ print(dfnew_out.groupby(['model','age'])['delta'].describe()['mean'].reset_index
 dfnew_out.groupby(['cohort','model','age'])['delta'].describe().to_csv(OUTPUTS+f'/age_acceleration_summary{filter_conditions}.csv')
 dfnew_out.pivot_table(columns=['cohort','model'],index='age').to_csv(OUTPUTS+f'/age_acceleration_summary_cohort{filter_conditions}.csv')
 dfnew_out.pivot_table(columns=['cohort','model'],index='age',aggfunc='median').to_csv(OUTPUTS+f'/age_acceleration_summary_median_cohort{filter_conditions}.csv')
+
+#### children over time - children only
+if children_cohort:
+    cohort_sort = ['8yo','10yo','12yo']
+    dfnew_out['age'] = dfnew_out['age'].str.replace('_age','')
+
+    alt.Chart(dfnew_out).mark_line(size=.5).encode(x=alt.X('cohort',sort=cohort_sort,title=None),
+                                            y=alt.Y('delta',title=None),
+                                            detail='patient').properties(height=80,width=80).facet(
+                                            column=alt.Column('age',title=None),
+                                            row=alt.Row('model',title='Age Acceleration')).save(f'{OUTPUTS}/children_timeline_all_patients.html')
+
+
+    alt.Chart(dfnew_out).mark_line(size=1).encode(x=alt.X('cohort',sort=cohort_sort,title=None),
+                                            y=alt.Y('delta',title=None),
+                                            color='model').properties(height=80,width=80).facet(
+                                            column=alt.Column('age',title=None),
+                                            row=alt.Row('patient',title='Age Acceleration')).save(f'{OUTPUTS}/children_timeline_all_patients2.html')
+
+
+    # mean ± std per cohort
+    dfnew_out_agg = dfnew_out.groupby(['age','cohort','model'])['delta'].agg(['mean','std']).reset_index()
+    dfnew_out_agg['lo'] = dfnew_out_agg['mean'] - dfnew_out_agg['std']
+    dfnew_out_agg['hi'] = dfnew_out_agg['mean'] + dfnew_out_agg['std']
+
+    base = alt.Chart().encode(x=alt.X('cohort:N',sort=cohort_sort,title=None))
+    lines = base.mark_line(size=1).encode(y=alt.Y('mean:Q',title=None))
+    dots = base.mark_circle(size=20,opacity=1).encode(y='mean:Q')
+    errs = base.mark_errorbar(ticks=True).encode(y='lo:Q',y2='hi:Q')
+    alt.layer(errs,lines,dots,data=dfnew_out_agg).properties(height=80,width=80).facet(
+                        column=alt.Column('age:N',title=None),
+                        row=alt.Row('model:N',title='Age Acceleration')).save(f'{OUTPUTS}/children_timeline_pooled.html')
+
+
 
 ### METRIC 3: Inter-Model Correlation Heatmap
 # This visualizes which models are "twins" and which is the outlier.
