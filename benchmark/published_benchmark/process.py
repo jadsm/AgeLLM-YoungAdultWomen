@@ -101,10 +101,20 @@ def get_chronological_ages(cohort):
     return {patient: float(re.search(r"Age: ?(\d+(?:\.\d+)?)", text).group(1))
             for patient, text in enumerate(texts, start=1)}
 
+# every "Name: value" field of the source input text (one per line, or several per line separated by ". ")
+_variable_pattern = re.compile(r"(?:^|(?<=\. ))([A-Za-z][^:.\n]*?):\s*(.*?)(?=\.\s+[A-Za-z][^:.\n]*?:|\.?$)", re.MULTILINE)
+def get_all_variables(cohort):
+    with open(os.path.join(SOURCE_DATA, source_files[cohort]), "r") as f:
+        texts = [json.loads(line)["input"] for line in f.read().splitlines()]
+    return pd.DataFrame([{name.strip(): value.strip() for name, value in _variable_pattern.findall(text)} for text in texts],
+                        index=pd.RangeIndex(1, len(texts) + 1, name="patient"))
+
 real_age_mapping = {(patient, cohort): age
                     for cohort in df['cohort'].unique()
                     for patient, age in get_chronological_ages(cohort).items()}
 df['chronological_age'] = df.set_index(['patient', 'cohort']).index.map(real_age_mapping).astype(float)
+
+get_all_variables(cohort)
 
 # make sure all ages are floats
 for c in df.columns:
@@ -191,6 +201,22 @@ if children_cohort:
     alt.layer(errs,lines,dots,data=dfnew_out_agg).properties(height=80,width=80).facet(
                         column=alt.Column('age:N',title=None),
                         row=alt.Row('model:N',title='Age Acceleration')).save(f'{OUTPUTS}/children_timeline_pooled.html')
+
+
+
+df_hepatic = dfnew_out.query('age == "hepatic"')
+alt.Chart(df_hepatic).mark_circle().encode(x=alt.X('delta').title(None),
+                                           color=alt.Color('cohort',
+                                                           scale=alt.Scale(domain=['8yo','10yo', '12yo'],
+                                                           range=['#00C4CC','#FFC300','#FF5733'])),
+                                           y='patient:N',
+                                           column=alt.Column('model').title('Hepatic Age Acceleration')).properties(height=200,width=100).save(f'{OUTPUTS}/children_hepatic_age_acceleration.html')
+
+# example children 3 and 6
+df_reasoning['cohort'] = df_reasoning['cohort'].str.replace('yo','').astype(int)
+df_reas_aux = df_reasoning.query("model == 'Gemini Flash Lite' and patient in [3,6]").sort_values(by=['patient','cohort']).drop(columns=['model']).reset_index(drop=True)
+df_reas_aux.to_csv(f'{OUTPUTS}/children_reasoning_examples.csv', index=False)
+
 
 
 
